@@ -1,0 +1,108 @@
+@@include('./html-templates/head.html',{
+  "title":"3.3.4. Feature Control Frames"
+})
+
+@@include('./html-templates/header.html',{
+  "num":"3.3.4." ,
+  "title":'Feature Control Frames',
+  "desc":" <b> Geometric tolerancing  </b> applies to the physical dimensions of the geometric parts. Some of the geometric characteristics include straightness, flatness, angularity, and parallelism. <b> Figure 35 </b>  shows a list of the geometric symbols used, the characteristic they describe, and the type of tolerance they control. As you can see, there are symbols that indicate control of various characteristics related to form, profile, orientation, location, and runout. These symbols appear in a block on the drawing called a <b> feature control frame. </b> ",
+  "icon":"334"
+})
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"35",
+     "shadow":"gray",
+    "h":"zoom-figure--h970",
+    "desc":"Knowing how these symbols are interpreted can help you understand what the designer intended for the finished part."
+  })
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          Feature control frames apply geometric tolerances to specific features on a part without adding too many notes to a drawing. 
+          <b> Figure 36 </b>  shows how the feature control frame uses symbols to describe the feature's tolerances. The first part of the frame shows the geometric symbol applied to the feature; the second part of the frame contains the tolerance,
+        </p>
+        <p> 
+          a zone descriptor, and a modifier if necessary; the last part of the frame contains the applicable datum references. Feature control frames are read from left to right and top to bottom if additional frame rows are present.
+
+
+        </p>
+     </section>
+  </div>
+</div>
+
+
+
+@@include('./html-templates/noinclude/card-number.html',{})
+
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"36",
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"A feature control frame is a shorthand way of telling the print reader how to interpret the dimensions of a feature, and how it relates to other part features. The frame is read from left to right."
+  })
+</div>
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          Some control frames are relatively simple, using only a geometric symbol and a tolerance, while others have additional information to guide print interpretation. Two or more feature control frames can be combined to apply more than one type of geometric tolerance to a feature, as shown in <b> Figure 37.</b>  Combined—or composite—control frames can define another datum when a feature must have a defined 
+        </p>
+        <p> 
+          orientation to another feature. Further, composite feature control frames can apply a single geometric tolerance to a feature for multiple datums and then tighten the tolerance for one of the datums.
+
+
+
+        </p>
+     </section>
+  </div>
+</div>
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"37",
+     "shadow":"gray",
+    "h":"zoom-figure--h660",
+    "desc":"Combined feature control frames apply two or more geometric tolerances to the same feature. In (A) the feature is first designed to be parallel with datum A within .015 and then adds a flatness tolerance to a tighter limit. Sometimes a feature is given a specified tolerance, which is made into another datum, as shown in (B)."
+  })
+</div>
+  
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray">
+        <p>
+          Figure 38 shows an example of a composite feature control frame. The top frame is the wider tolerance of the feature, and the next lower frame tightens the tolerance with respect to the referenced datum.
+
+
+        </p>
+       
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"38",
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"A composite control frame uses only one geometric tolerance, but applies different tolerances to different datums. In this case, a true position tolerance of .020 is applied to the feature with respect to datums A, B, and C; however, an additional tolerance of .005 is applied with respect to datum A."
+  })
+</div>
+
+
+
+@@include('./html-templates/scripts.html',{})

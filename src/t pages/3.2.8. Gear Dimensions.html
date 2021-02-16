@@ -1,0 +1,140 @@
+@@include('./html-templates/head.html',{
+  "title":"3.2.8 Gear Dimensions"
+})
+
+@@include('./html-templates/header.html',{
+  "num":"3.2.8",
+  "title":'Gear Dimensions',
+  "desc":"The form of all gear teeth must be precise to ensure that gears in multiple sets—or trains—mesh correctly. <strong> Figure 20 </strong> illustrates a pinion and gear and shows the most important components. One of the important characteristics of a gear set is the <strong>diametral pitch</strong>—the number of teeth per inch of the gear's <strong> pitch diameter.</strong>  <br> <br>  For example, a gear with a diametral pitch of 12 will have 12 teeth for every inch of pitch diameter. If the gear has a pitch diameter of 2 inches, the gear will have a total of 24 teeth (2 × 12 =24) around the outside. A 3-inch gear with the same diametral pitch will have 36 teeth (3 × 12 =36). <br> <br> This simple explanation has two practical implications. A gear can have only a whole number of teeth around the outside, and all gears with the same diametral pitch will have the same size tooth and, therefore, mesh properly with any other gear of the same diametral pitch.",
+  "icon":"328"
+})
+ 
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"20",
+    "folder":'3',
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"The gear ratio is the ratio of pitch diameters of the drive gear to the driven gear, which is the same as the ratio of the numbers of teeth on the respective gears."
+  })
+</div>
+ 
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          In designing gear teeth, the shape of the tooth must have precise dimensions and curvature to make sure it meshes properly with other gear teeth—called an <strong> involute curve.  </strong>  This curve is the shape you would trace with a pencil tied to a piece of string as it unwinds from the surface of a cylinder. The specific form is necessary, so the teeth make contact at the same distance from the center of each gear at every point during the rotation—from the first contact 
+        </p>
+        <p> 
+         of each tooth until it disengages. Since the surfaces are curved, as a pair of gears turn, the two gear teeth will always contact an angle—called the <strong>  pressure angle</strong> , as shown in <strong>Figure 21</strong>. Standard gear forms use either a 20° or 14 1/4° contact angle, with the 20-degree angle being more popular in modern manufacturing designs.
+
+        </p>
+     </section>
+  </div>
+</div> 
+
+
+  <div class="container-fluid  main-container">
+    @@include('./html-templates/figures.html',{
+      "num":"21",
+      "folder":'3',
+      "shadow":"gray",
+      "desc":"The pressure angle is the angle between the line of gear action, or contact, and a line tangent to the pitch circles.",
+      "h":"zoom-figure--h470"
+    })
+  </div>
+
+  <div class="container-fluid  main-container">
+    <div class="row main-row">
+       <section class="text-brick blueprint-boxsh-gray ">
+  
+          <p> 
+            Another important dimension on gears is the pitch diameter. The pitch diameter is an imaginary circle whose diameter is at the approximate midpoint of the tooth height, as shown in <strong> Figure 22.</strong>    All gears that mate properly will have their pitch diameters tangent to one another, as shown in <strong> Figure 23. </strong> 
+  
+          </p>
+       </section>
+    </div>
+  </div>
+        
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"22",
+    "folder":'3',
+    "h":"zoom-figure--h470",
+    "shadow":"gray",
+    "desc":"The pitch diameter of the gears determines almost all the important geometry of the gear set."
+  })
+</div>
+ 
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"23",
+    "folder":'3',
+    "h":"zoom-figure--h470",
+    "shadow":"gray",
+    "desc":"Ideally, the pitch diameters of all gears in the gear set are tangent to one another. Gears that don’t mesh on the pitch diameters are noisy and wear more quickly."
+  })
+</div>
+ 
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          The gear width determines how much horsepower it can transmit since its full tooth width transmits the gear's force. The face width of the gear is the thickness of the tooth along the axis of the gear. Drafters often put important gear data in a table on the print, as shown in  <strong> Figure 24. </strong> The data table gives manufacturers the 
+        </p>
+        <p> 
+          necessary information to produce the gear from standard or custom gear cutters. This information comes from standard mathematical formulas that determine the geometry of spur gear teeth. A few basic dimensional requirements will determine almost all the rest of the gear geometry, as shown in the table of formulas.”
+
+
+        </p>
+     </section>
+  </div>
+</div>
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"24",
+    "h":"zoom-figure--h470",
+    "folder":'3',
+    "shadow":"gray",
+    "desc":"Important dimensions for gears are included in tables on prints to aid the machinist and the inspector."
+  })
+</div>
+<div class="container-fluid  main-container">
+@@include('./html-templates/table328.html',{})
+
+</div>
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray">
+
+        <p> 
+          Helical gears—with teeth cut at an angle to the face—are similar to spur gears. An example appears in <strong> Figure 26.</strong>  Helical gears can provide higher torque, last longer, and run quieter and smoother at high speeds. A common application is in a transmission. Some uncommon, special application helical gears have shafts cut that aren’t parallel.
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"26",
+    "folder":'3',
+    "h":"zoom-figure--h470",
+    "shadow":"gray",
+    "desc":"Helical gears are similar to spur gears and are used when torque and horsepower requirements are greater, or when it’s important to minimize noise."
+  })
+</div>
+
+
+@@include('./html-templates/scripts.html',{})

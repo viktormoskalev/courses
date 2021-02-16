@@ -1,0 +1,182 @@
+.text-brick {
+  margin-bottom: 50px;
+  padding: 45px 20px 20px 90px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 20px 40px #e4e4e4;
+
+  @include tablet {
+    padding: 45px 60px 45px 140px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.375em;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 62px;
+    height: 62px;
+    background: url(../img/notebook-icon.svg) center/30% no-repeat,
+      linear-gradient(111.11deg, #00c6ff 0%, #555dff 82.9%);
+
+    @include tablet {
+      width: 86px;
+      height: 86px;
+      // background: url(../img/notebook-icon.svg) center/30% no-repeat,
+      //   linear-gradient(111.11deg, #00c6ff 0%, #555dff 82.9%);
+    }
+  }
+
+  &__column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include mobile-lg {
+      flex-direction: row;
+    }
+
+    p {
+      width: 100%;
+
+      @include mobile-lg {
+        width: calc(50% - 50px);
+      }
+    }
+  }
+
+  //for page 1.1.2
+  &__combined {
+    position: relative;
+    padding: 45px 20px 460px 90px;
+
+    @include mobile-lg {
+      padding: 45px 20px 270px 90px;
+    }
+    @include tablet {
+      padding: 45px 60px 200px 140px;
+    }
+
+    .combined {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      @include mobile-lg {
+        flex-direction: row;
+      }
+
+      img {
+        width: 100%;
+
+        @include mobile-lg {
+          width: 55%;
+        }
+        @include desktop-sm {
+          width: initial;
+        }
+      }
+
+      &__description {
+        padding: 40px 100px 40px 40px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        background-color: #fff;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: $color-description;
+          border-bottom-right-radius: 100px;
+        }
+
+        h5 {
+          margin-top: auto;
+          padding-left: 30px;
+          text-align: left;
+          background: url(../img/info-icon.svg);
+          background-repeat: no-repeat;
+          background-position: 0 50%;
+          font-size: 0.75rem;
+          font-weight: 700;
+          color: $color-main;
+          z-index: 1;
+
+          @include tablet {
+            padding-left: 0;
+            padding-top: 22px;
+            background-position: 0 0;
+          }
+        }
+        p {
+          width: 100%;
+          font-size: 0.75rem;
+          line-height: 1.25;
+          z-index: 1;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__list {
+    width: 100%;
+
+    ol {
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        padding-left: 20px;
+        position: relative;
+        font-size: 1rem;
+        list-style: none;
+        
+        p {
+          overflow: hidden;
+        }
+
+        .marker {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: -30px;
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          background-color: #0174EE;
+          color: $color-text-light;
+        }
+
+        .lines {
+          letter-spacing: .1em;
+          color: #13A6DD;
+        }
+      }
+    }
+  }
+
+  &--lesson {
+    &::after {
+      background: url(../img/lesson-icon.svg) center/30% no-repeat,
+        linear-gradient(111.11deg, #00c6ff 0%, #555dff 82.9%);
+    }
+  }
+}

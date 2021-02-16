@@ -1,0 +1,53 @@
+.main {
+  &-container {
+    
+    &-bg {
+     
+      &-parlelg {
+      &::before {
+        top: 5%;
+        clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+        height: 800px;
+        }
+      }
+      &-132 {
+      &::before {
+        top: 12%;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 90%);
+        height: 780px;
+        }
+      }
+      &-133 {
+      &::before {
+        top: 70px;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 90%);
+        height: 830px;
+        }
+      }
+
+    }
+      
+  }
+}
+
+
+
+  .blueprint{
+  &-boxsh-blue3 {
+    box-shadow: 0px 20px 40px #C8DDE6;
+  
+}
+}
+
+@media (min-width:600px){
+  .text-brick{
+    p{
+  margin-bottom: 0;
+    }
+  
+  } 
+}
+
+textarea{
+  resize: none;
+}

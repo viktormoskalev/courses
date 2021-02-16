@@ -1,0 +1,57 @@
+.slideLeft {
+  animation: slideLeft;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.zoomed {
+  animation: zoomed;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.slideRight {
+  animation: slideRight;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100%) scale3d(0.3, 0.3, 0.3) rotate3d(0, 0, 1, 90deg);
+    opacity: 0;
+    // visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes zoomed {
+  from {
+    transform: scale3d(0.3, 0.3, 0.3) rotate3d(0, 0, 1, 90deg);
+    opacity: 0;
+    // visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(100%) scale3d(0.3, 0.3, 0.3) rotate3d(0, 0, 1, 90deg);
+    opacity: 0;
+    // visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}

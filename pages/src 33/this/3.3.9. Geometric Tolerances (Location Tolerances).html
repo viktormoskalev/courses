@@ -1,0 +1,66 @@
+@@include('./html-templates/head.html',{
+  "title":"3.3.9. Geometric Tolerances   (Orientation Tolerances)"
+})
+
+@@include('./html-templates/header.html',{
+  "num":"3.3.9." ,
+  "title":'  Geometric Tolerances   (Orientation Tolerances)',
+  "desc":" Location tolerances apply geometric controls to features with respect to other features or datums. The two location tolerance controls are true position and concentricity.  ",
+  "icon":"339"
+})
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+       <b>  True position</b>—also known simply as position—means the exact or ideal location of a feature with respect to one or more datums. The control frame symbol resembles a target—a plus sign over a smaller circle. Basic dimensions define the feature's location coordinates, and the control frame tolerance shows the variance allowed for the feature. You could see the symbol applied to any feature on a blueprint, often including specifications for MMC and LMC, tangent planes, and projected tolerances. However, primarily, it applies to holes. Position does not apply to surfaces.
+
+        </p>
+        <p> 
+          The true position often applies to holes with control to other holes, edges, or surfaces. The dimensional tolerances are usually at the maximum material position to ensure the ability to fit with mating parts. The actual hole location must fall within a circle of a diameter equal to the tolerance at the specified position. 
+         <b> Figure 47 </b>  shows how the true position tolerance is applied and its interpretation.
+
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"47",
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"Applying geometric true position tolerances can actually increase the allowable deviation because the position feature allows a circular tolerance zone instead of a square one, as in conventional tolerancing."  })
+</div>
+
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+         <b> Concentricity</b>—also known as coaxially—is the condition of two features sharing the same rotation axis as in a hole with a counterbore or a transmission shaft with two diameters. The control frame symbol is a double-ringed circle. The tolerance relates the central axis—based on the median point—of a feature to a datum axis. The datum axis is a projected axis—not a tangible plane or feature—and the control uses the datum’s median point as the reference. 
+
+        </p>
+
+
+        <p> 
+          GD&T symmetry measures the true midpoint for a feature and relates it to an axis or datum plane. Only high precision parts will use concentricity tolerancing. A concentricity tolerance applied to a feature controls the location of the axis of that feature within the specified tolerance of the axis of the second feature <b> (Figure 48). </b> 
+
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"48",
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"Concentricity can be measured with a dial indicator at specific elements of the cylindrical surface. Regardless of feature size, all median points of diametrically opposed elements of the feature must lie within a Ø.01 cylindrical tolerance zone. The axis of the tolerance zone coincides with the axis of datum feature A."  })
+</div>
+
+
+
+@@include('./html-templates/scripts.html',{})

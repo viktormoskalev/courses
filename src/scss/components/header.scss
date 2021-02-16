@@ -1,0 +1,253 @@
+.header {
+  flex: 1 0 100%;
+    .no-icon {
+      padding: 20px 30px 30px 55px !important;
+    }
+    .header__title{
+      min-width: auto;
+      padding: 20px 70px 20px 90px;
+      display: flex;
+      align-items: center;
+      height: auto;
+      flex:0 1 auto;
+      align-self: flex-start;
+      background-repeat: no-repeat;
+    }
+
+    &__description{
+      max-width: 425px;
+      margin-left: auto;
+    }
+
+    .icon-131 {
+      background: url(../images/icons/icon-131.svg);
+      background-repeat: no-repeat;
+      background-position: 10% 50%;
+    }
+    .icon-132 {
+      background: url(../images/icons/icon-132.svg);
+      background-repeat: no-repeat;
+      background-position: 10% 50%;
+    }
+    .icon-133 {
+      background: url(../images/icons/icon-133.svg);
+      background-repeat: no-repeat;
+      background-position: 5% 50%;
+    }
+    .icon-134 {
+      background: url(../images/icons/icon-134.svg);
+      background-repeat: no-repeat;
+      background-position: 10% 50%;
+    }
+    .icon-135 {
+      background: url(../images/icons/icon-135.svg);
+      background-repeat: no-repeat;
+      background-position: 10% 50%;
+      padding-left: 130px;
+      padding-right: 40px;
+    }
+    .icon-136 {
+      background: url(../images/icons/icon-136.svg);
+      background-repeat: no-repeat;
+      background-position: 17% 50%;
+      padding-left: 120px;
+      padding-right: 70px;
+    }
+
+    .icon-327 {
+      background: url(../images/icons/icon-327.svg);
+      background-repeat: no-repeat;
+      background-position: 8% 50%;
+     
+    }
+    .icon-328 {
+      background: url(../images/icons/icon-328.svg);
+      background-repeat: no-repeat;
+      background-position: 7% 50%;
+     
+    }
+    .icon-329 {
+      background: url(../images/icons/icon-329.svg);
+      background-repeat: no-repeat;
+      background-position: 7% 50%;
+     
+    }
+    .icon-3210 {
+      background: url(../images/icons/icon-3210.svg);
+      background-repeat: no-repeat;
+      background-position: 8% 50%;
+     
+    }
+    .icon-331 {
+      background: url(../images/icons/icon-331.svg);
+      background-repeat: no-repeat;
+      background-position: 7% 50%;
+      padding-left: 110px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 440px;
+       }
+  
+    }
+
+    .icon-332 {
+      background: url(../images/icons/icon-332.svg);
+      background-repeat: no-repeat;
+      background-position: 7% 50%;
+      padding-left: 110px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 440px;
+       }
+     
+    }
+    .icon-333 {
+      background: url(../images/icons/icon-333.svg);
+      background-repeat: no-repeat;
+      background-position: 8% 50%;
+     
+    }
+    .icon-334 {
+      background: url(../images/icons/icon-334.svg);
+      background-repeat: no-repeat;
+      background-position: 8% 50%;
+     
+    }
+    .icon-335 {
+      background: url(../images/icons/icon-335.svg);
+      background-repeat: no-repeat;
+      background-position: 5% 50%;
+     
+    }
+    .icon-336 {
+      background-image: url(../images/icons/icon-336.svg);
+      background-position: 7% 50%;
+      padding-left: 110px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 440px;
+       }
+     
+    }
+    .icon-337 {
+      background-image: url(../images/icons/icon-337.svg);
+      background-position: 7% 50%;
+      padding-left: 110px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 440px;
+       }
+    }
+    .icon-338 {
+      background-image: url(../images/icons/icon-338.svg);
+      background-position: 7% 50%;
+      padding-left: 110px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 440px;
+       }
+    }
+    .icon-339 {
+      background-image: url(../images/icons/icon-339.svg);
+      background-position: 7% 50%;
+      padding-left: 110px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 440px;
+       }
+    }
+    .icon-3310 {
+      background-image: url(../images/icons/icon-3310.svg);
+      background-position: 7% 50%;
+      padding-left: 110px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 440px;
+       }
+    }
+    .icon-3311 {
+      background-image: url(../images/icons/icon-3311.svg);
+      background-position: 11% 50%;
+      padding-left: 110px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 280px;
+       }
+    }
+    .icon-3312 {
+      background-image: url(../images/icons/icon-3312.svg);
+      background-position: 11% 50%;
+      padding-left: 110px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 280px;
+       }
+    }
+
+
+    .icon-432 {
+      background-image: url(../images/icons/icon-432.svg);
+      background-position: 8% 50%;
+      padding-left: 100px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 400px;
+       }
+    }
+    .icon-433 {
+      background-image: url(../images/icons/icon-433.svg);
+      background-position: 11% 50%;
+      padding-left: 110px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 280px;
+       }
+    }
+    .icon-434 {
+      background-image: url(../images/icons/icon-434.svg);
+      background-position: 7% 50%;
+      padding-left: 100px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 280px;
+       }
+    }
+    .icon-435 {
+      background-image: url(../images/icons/icon-435.svg);
+      background-position: 7% 50%;
+      padding-left: 100px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 280px;
+       }
+    }
+    .icon-436 {
+      background-image: url(../images/icons/icon-436.svg);
+      background-position: 7% 50%;
+      padding-left: 100px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 280px;
+       }
+    }
+    .icon-437 {
+      background-image: url(../images/icons/icon-437.svg);
+      background-position: 7% 50%;
+      padding-left: 100px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 280px;
+       }
+    }
+    .icon-415 {
+      background-image: url(../images/icons/icon-415.svg);
+      background-position: 7% 50%;
+      padding-left: 100px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 280px;
+       }
+    }
+
+    
+}  

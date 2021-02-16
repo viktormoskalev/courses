@@ -1,0 +1,125 @@
+@@include('./html-templates/head.html',{
+  "title":"4.3.5.   Surface Finish   and Texture Symbols Scales"
+})
+
+
+@@include('./html-templates/header.html',{
+  "num":"4.3.5." ,
+  "title":'   Surface Finish   and Texture Symbols Scales',
+  "desc":" While dimensions and tolerances define the size, shape, and location of features, the texture or finish on the machined surface can also greatly affect a part’s function or cost. A finish that’s too rough can cause excessive friction and wear on parts designed to move easily. By contrast, creating a polished finish on a part that doesn’t require it just adds to the time and cost of making the part. This section will briefly explain the symbols used to denote surface finish and how the machinist should interpret these symbols when making the part.",
+  "icon":"435"
+})
+
+<div class="container-fluid main-container">
+  <div class="justify-content-around  row main-row">   
+ <div class="col-sm-6">
+  @@include('./html-templates/switch-cards.html',{
+    "img":"icon-open-new.png",
+    "anim":"appear-rotate",
+    "desc":"ANSI and ISO vary slightly in the measurement of finishing surfaces. However, both values mean the same thing. In the ANSI system, surface finishes measurements are in microinches—one-millionth of an inch or 0.000001 inches. The value is the arithmetic average (AA) of the peak-to-valley measurements taken over a specific width. In the ISO system, surface finishes measurements are in micrometers—one-millionth of a meter or 0.000001 meters. Here, the measurement zone is the centerline average (CLA). ",
+  })
+ </div>
+ <div class="col-sm-6">
+  @@include('./html-templates/switch-cards.html',{
+    "anim":"appear-rotate",
+    "img":"icon-open-new.png",
+    "desc":"    The production process—grinding, turning, milling, and other activities—the scratches and imperfection in the raw material, and sometimes the final finishing process can all affect the surface finish of a part. Although this topic can be complex, this section will help break out a few basic symbols and values. The basic surface finish or roughness symbol looks like a checkmark placed on the surface face that it controls. The symbol includes numbers for roughness height, waviness height and spacing, roughness width cutoff, lay symbol, roughness spacing, machining allowance, and symbols for required machining, no machining, and all-around machining. This section will cover the roughness height, lay symbol, and machining symbols.",
+  })
+ </div> 
+  </div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          The table lists the standard finish values in microinches, micrometers, and N-scale and some applications and methods of producing the finish. Several methods will yield a given finish, so the machinist must decide which one to use to produce the desired quality with the least expense. For instance, a finish of 32 microinches is possible on the mill. However, this finish is near the limit of the capability of many milling operations, but it’s well within limits for grinding. 
+        </p>
+        <p> 
+          The machinist may mill the part roughly to size and then finish by grinding to get both the dimensional tolerance and the finish required. Another consideration is the heat treat specification. If the part needs heat treating after milling and needs to be finish-ground, it makes no sense to spend the extra time milling the part to a good finish, only to grind this finish away in the final operation.
+        </p>
+     </section>
+  </div>
+</div>
+
+
+
+@@include('./html-templates/table435.html',{})
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+         
+         <strong> Figure 6  </strong>  lists many of the common surface texture symbols and the meanings and placement of values. Some of the notes indicate that the surface must be machined, regardless of the raw stock's surface finish. Other notes indicate that the surface shouldn’t be machined and that the given surface finish is an inspection tool. The surface finish symbol can also include directions on how a part should be machined by specifying the direction—the lay—of the tooling marks. 
+        </p>
+        <p> 
+          Finally, the surface finish symbol can include a value for the amount of material left on before finishing a particular surface. As we discussed earlier, the amount of material allowance may also be listed in a note or might be left up to the machinist to decide.
+        </p>
+     </section>
+  </div>
+</div>
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"6",
+     "shadow":"gray",
+     "folder":'4',
+  
+    "h":"zoom-figure--h720",
+    "desc":"Several common surface finish symbols appear here. You may see roughness values listed as a maximum value or a combination of maximum and minimum values. If required, the lay symbols tell the machinist which direction to machine the part—lay is the machined pattern's orientation on the finished surface. It is critical when deciding how to set up the part. Other notes include machining required, machining prohibited, and material allowance added for machining."  })
+</div>
+
+
+<div class="container-fluid main-container">
+  <div class="row main-row">
+    <section class="text-brick text-brick__list ">
+
+      <p class="list-title"> <strong> Figure 7 </strong> shows a cast part. It is a good example of a part that has very few actual machined dimensions. However, the geometric tolerances and surface finish symbols require the machinist to set up and machine it in a particular order. Note that the bottom face of the part is datum A, and the larger diameter end of the casting is datum B. Here’s the order of operation for this cast piece:</p>
+
+
+      <ol>
+        <li><span class="marker">1</span>
+          <p> Check thickness of the part. </p>
+        </li>
+
+
+        <li><span class="marker">2</span>
+         <p> Set up the part, with the bottom (datum A) facing up.</p>
+        </li>
+
+
+
+        <li><span class="marker">3</span>
+        <p>Locate the part off the large outer diameter on the left side of the part.</p>
+        </li>
+        <li><span class="marker">4</span>
+        <p> Machine datum A face, taking off only enough material to clean up the surface, making sure there’s 	sufficient material left on to clean up the opposite side when bringing the 1.500" dimension into 	tolerance.</p>
+        </li>
+        <li><span class="marker">5</span>
+        <p> In the same setup, machine the two bores.</p>
+        </li>
+        <li><span class="marker">6</span>
+        <p> Flip the part, and machine the other face to the 1.500" dimension.</p>
+        </li>
+
+      </ol>
+    </section>
+  </div>
+</div>
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures-vertical.html',{
+    "num":"7",
+     "shadow":"gray",
+     "folder":'4',
+ 
+    "h":"zoom-figure--h720",
+    "desc":"This cast part has few machined dimensions on it. Machining of the four faces and two bores will match size and location. The surface finish symbols indicate these are the only surfaces machined. The rest of the part remains as cast. Machining of the bores will have a better surface finish than that of the faces. The bores also have geometric tolerances indicating which features should be used as datums to locate the other features."  })
+</div>
+
+
+@@include('./html-templates/scripts.html',{})  

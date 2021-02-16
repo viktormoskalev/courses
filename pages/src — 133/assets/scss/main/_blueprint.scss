@@ -1,0 +1,192 @@
+.blueprint {
+  margin-bottom: 50px;
+  background-color: #fff;
+
+  .scale {
+    &__block {
+      display: flex;
+      flex-wrap: wrap;
+      z-index: 7;
+      position: relative;
+      margin-bottom: 50px;
+
+      .scale__brick {
+        width: 50%;
+        height: 50%;
+        overflow: hidden;
+        position: relative;
+        cursor: zoom-in;
+
+        &.active {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 5;
+          background-color: #fff;
+          cursor: zoom-out;
+          transition: 0.2s;
+
+          &:hover::after {
+            width: 0;
+            height: 0;
+            border: none;
+          }
+        }
+        &.activeTopLeft {
+          top: 0;
+          left: 0;
+        }
+        &.activeTopRight {
+          top: 0;
+          right: 0;
+        }
+        &.activeBottomLeft {
+          bottom: 0;
+          left: 0;
+        }
+        &.activeBottomRight {
+          bottom: 0;
+          right: 0;
+        }
+
+        &:hover::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: calc(100% - 20px);
+          height: calc(100% - 20px);
+          margin: 10px;
+          // border: 2px solid $color-blueprint;
+        }
+      }
+
+      // .img-top-left {
+      //   transform: scale(2) translateX(25%) translateY(25%);
+      // }
+      // .img-top-right {
+      //   transform: scale(2) translateX(-25%) translateY(25%);
+      // }
+      // .img-bottom-left {
+      //   transform: scale(2) translateX(25%) translateY(-25%);
+      // }
+      // .img-bottom-right {
+      //   transform: scale(2) translateX(-25%) translateY(-25%);
+      // }
+    }
+  }
+
+  figure {
+    padding: 15px;
+    border: none;
+    overflow: hidden;
+    position: relative;
+
+    figcaption {
+      margin: 0;
+      padding: 20px 30px;
+      position: absolute;
+      bottom: 0;
+      text-align: left;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+  }
+
+  &__description {
+    padding: 30px 40px 30px 40px;
+    background-color: $color-description;
+    border-radius: 0 0 100px 0;
+
+    h5 {
+      padding-left: 30px;
+      text-align: left;
+      background: url(../img/info-icon.svg);
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: $color-main;
+    }
+
+    p {
+      font-size: 0.75rem;
+      line-height: 1.25;
+    }
+  }
+
+  &-row {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    .blueprint {
+      &__description {
+        padding: 30px 30px 30px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        @include tablet {
+          flex: 0 0 240px;
+        }
+
+        h5 {
+          @include tablet {
+            padding-left: 0;
+            padding-top: 20px;
+            background-position: 0 0;
+          }
+        }
+
+        p {
+          line-height: 1.2;
+        }
+      }
+    }
+  }
+
+  &-boxsh-gray {
+    box-shadow: 0 20px 40px #e4e4e4;
+  }
+
+  &-boxsh-blue {
+    box-shadow: 0 20px 40px $color-bg-accent;
+  }
+
+  &-inline {
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+      flex-direction: row;
+    }
+
+    &-40 {
+      flex: 0 0 40%;
+    }
+    &-60 {
+      flex: 0 0 60%;
+    }
+  }
+
+  &--span-abs {
+    position: relative;
+
+    .img-abs-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      margin: 20px;
+      font-weight: 700;
+      color: $color-text-light;
+
+      &--black {
+        color: $color-main;
+      }
+    }
+  }
+}

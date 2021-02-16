@@ -1,0 +1,40 @@
+ *{
+    /* border: solid red 1px; */
+    /* transform: none !important; */
+    /* position: static !important; */
+    /* overflow: visible !important; */
+  pointer-events: all;
+
+}
+
+*:hover{
+   border: solid red 1px;
+}
+
+.test-class{
+    border:solid blue 2px;
+    transform: none !important;
+    transition:1s;
+    position: static !important;
+}
+
+.slide-window-slide-container{
+    /* height: 800px !important; */
+}
+
+
+
+.slide-object{
+
+    /* transform: none !important; */
+  
+}
+
+/* 
+.slide-object-vectorshape{
+    border:solid rgb(4, 255, 0) 1px;
+} */
+
+.eventable{
+    border:solid green 1px;
+}

@@ -1,0 +1,106 @@
+.header {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    flex-direction: row;
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    max-width: 400px;
+    flex: 1 0;
+    padding: 20px 30px 30px 95px;
+    margin-bottom: 50px;
+    border-radius: 0 53.5px 53.5px 53.5px;
+    background-color: #fff;
+    box-shadow: 0 20px 40px #e4e4e4;
+
+    @include tablet {
+      margin-bottom: auto;
+      min-width: 400px;
+      margin-right: 40px;
+      padding: 20px 100px 30px 95px;
+    }
+
+    &--small {
+      max-width: 300px !important;
+      height: 105px;
+      padding: 20px 30px 30px 95px !important;
+
+      @include mobile-lg {
+        margin-right: 140px !important;
+      }
+    }
+
+    &--middle {
+      min-width: 300px !important;
+      height: 105px;
+      padding: 20px 30px 30px 95px !important;
+
+      @include mobile-lg {
+        min-width: 340px !important;
+        margin-right: 100px !important;
+      }
+    }
+
+    &--short {
+      height: 105px;
+      margin-right: 70px !important;
+    }
+
+    &--long {
+      height: 120px;
+      padding: 10px 30px 30px 95px !important;
+
+      @include mobile-lg {
+        min-width: 450px !important;
+        margin-right: 20px;
+        height: 105px;
+      }
+    }
+
+    &--long-large {
+      height: 140px;
+      padding: 10px 40px 30px 95px !important;
+
+      @include mobile-lg {
+        min-width: 450px !important;
+        margin-right: 20px;
+      }
+    }
+
+    .title-content {
+      p {
+        font-family: $font-title;
+        font-size: 0.875rem;
+        margin-bottom: 0;
+      }
+      h1 {
+        margin: 0;
+        font-family: $font-title;
+        font-size: 1.375rem;
+        font-weight: 400;
+        line-height: 1.25em;
+        text-align: left;
+      }
+    }
+  }
+
+  &__description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      font-size: 1rem;
+      line-height: 1.25;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

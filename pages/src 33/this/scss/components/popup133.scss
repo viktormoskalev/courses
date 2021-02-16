@@ -1,0 +1,205 @@
+.popup133 {
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+    &-open-icon {
+      display: none;
+    }
+  
+    &-button {
+      flex-shrink: 0;
+      margin-right: 40px;
+      background: linear-gradient(135deg, #d760d8 0%, #5342b9 100%);
+      height: 90px;
+      width: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      outline: none;
+  
+      &--orange {
+        background: linear-gradient(314.79deg, #ff7e00 25.37%, #ffc516 100%);
+      }
+      &--blue {
+        background: linear-gradient(111.11deg, #00c6ff 0%, #555dff 82.9%);
+      }
+      &--green {
+        background: linear-gradient(131.55deg, #9ADD31 0%, #29D88C 80.71%);
+      }
+    }
+  
+    &-open {
+      .popup133-text {
+        opacity: 1;
+      }
+      .popup133-open-icon {
+        display: inline;
+      }
+      .popup133-close-icon {
+        display: none;
+      }
+    }
+  
+    &-text {
+      transition: 0.4s;
+      opacity: 0;
+      font-family: $font-main;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+      margin: 0;
+      background-color: #bbf3d6;
+      max-width: 600px;
+      padding: 20px;
+      position: relative;
+  
+      &::before {
+        clip-path: polygon(0 50%, 100% 100%, 100% 0);
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 60px;
+        background-color: #bbf3d6;
+        position: absolute;
+        left: -28px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .popup133 {
+      display: block;
+    }
+    .popup133-button {
+      margin: 0 auto 40px;
+    }
+    .popup133-text {
+      font-size: 0;
+  
+      &::before {
+        width: 60px;
+        height: 30px;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%) translateY(-90%);
+      }
+    }
+    .popup133-open .popup133-text {
+      font-size: 14px;
+    }
+  }
+  .animated-box {
+    position: relative;
+      &:focus{
+       
+        box-shadow: 0 0 15px 1px $color-main;
+      }
+  }
+  .animated-box:after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    // border-radius: 4px;
+    background-color: $color-main;
+
+
+    clip-path: polygon(
+      0% 100%,
+      2px 100%,
+      2px 2px,
+      calc(100% - 2px) 2px,
+      calc(100% - 2px) calc(100% - 2px),
+      2px calc(100% - 2px),
+      2px 100%,
+      100% 100%,
+      100% 0%,
+      0% 0%
+    );
+  }
+  .animated-box:after {
+    animation: frame-enter 2s forwards ease-in-out reverse infinite;
+    animation-fill-mode: forwards;
+  }
+  @keyframes frame-enter {
+    0% {
+      clip-path: polygon(
+        0% 100%,
+        1px 100%,
+        2px 2px,
+        calc(100% - 2px) 2px,
+        calc(100% - 2px) calc(100% - 2px),
+        2px calc(100% - 2px),
+        2px 100%,
+        100% 100%,
+        100% 0%,
+        0% 0%
+      );
+    }
+    25% {
+      clip-path: polygon(
+        0% 100%,
+        2px 100%,
+        2px 2px,
+        calc(100% - 2px) 2px,
+        calc(100% - 2px) calc(100% - 2px),
+        calc(100% - 2px) calc(100% - 2px),
+        calc(100% - 2px) 100%,
+        100% 100%,
+        100% 0%,
+        0% 0%
+      );
+    }
+    50% {
+      clip-path: polygon(
+        0% 100%,
+        2px 100%,
+        2px 2px,
+        calc(100% - 2px) 2px,
+        calc(100% - 2px) 2px,
+        calc(100% - 2px) 2px,
+        calc(100% - 2px) 2px,
+        calc(100% - 2px) 2px,
+        100% 0%,
+        0% 0%
+      );
+    }
+    75% {
+      -webkit-clip-path: polygon(
+        0% 100%,
+        2px 100%,
+        2px 2px,
+        2px 2px,
+        2px 2px,
+        2px 2px,
+        2px 2px,
+        2px 2px,
+        2px 0%,
+        0% 0%
+      );
+    }
+    100% {
+      -webkit-clip-path: polygon(
+        0% 100%,
+        2px 100%,
+        2px 100%,
+        2px 100%,
+        2px 100%,
+        2px 100%,
+        2px 100%,
+        2px 100%,
+        2px 100%,
+        0% 100%
+      );
+    }
+  }
+  

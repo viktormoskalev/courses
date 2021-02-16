@@ -1,0 +1,128 @@
+@@include('./html-templates/head.html',{
+  "title":" 3.3.6. Geometric Tolerances  (Form Tolerances)"
+})
+
+@@include('./html-templates/header.html',{
+  "num":"3.3.6." ,
+  "title":'Geometric Tolerances  (Form Tolerances)',
+  "desc":" Form tolerances specify the allowable variation in geometric form. These tolerances include flatness, straightness, circularity (or roundness), and cylindricity.    ",
+  "icon":"336"
+})
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+       <strong> Flatness</strong>    is the condition in which all points on the surface of the part are on the same plane. The symbol for flatness looks like an offset rectangle. It defines the feature's flat uniformity called out by imaging two parallel lines on either side of the highlighted feature. Machinists and inspectors might use a height tool to check a part's flatness, but the most useful tool to measure flatness is a coordinate measuring machine that can judge the flatness across the full surface. Flatness is similar to straightness but is measured on two 
+        </p>
+        <p> 
+          planes—making it a 3D measurement.
+          An applied flatness tolerance of 0.010" means that all points on the part's surface will be within the boundaries of two parallel planes 0.010" apart, as shown in <strong> Figure 39. </strong>  The top plane will contact the highest element on the surface, the bottom plane will be the specified tolerance below the top plane, and all surface irregularities will be above the bottom plane.
+
+
+
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+           <strong> Straightness  </strong>  applies a zone of uniform width along the length of the feature, as shown in <strong> Figure 40 </strong>. The straightness symbol looks like a straight line enclosed in the control frame box and can refer to a surface or axis condition. The surface straightness applies to a line on the part’s surface. The axis—or axial—straightness controls the curve of the part, usually a cylinder.
+
+
+        </p>
+
+
+        <p> 
+          It will include a maximum material condition measurement and appear next to the axis dimension. The surface of the part may take any shape. However, it must be within the tolerance zone as indicated by the full indicator movement (FIM) of a measuring device such as a dial indicator.
+
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"39",
+     "shadow":"gray",
+     "folder":'3',
+    "h":"zoom-figure--h470",
+    "desc":"In flatness, the entire surface of the feature must fall within two parallel planes at the specified distance apart. The surface must be within the specified limits of size."
+  })
+</div>
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"40",
+     "shadow":"gray",
+     "folder":'3',
+    "h":"zoom-figure--h470",
+    "desc":"Straightness refers to one segment of a surface being in a straight line; it doesn’t refer to the entire surface. Here, each longitudinal segment of the surface must lie between two parallel lines (0.02 apart) where the two lines and the nominal axis of the part share a common plane. The feature must be within the specified limits of size and the boundary of perfect form at MMC (16.00)."
+  })
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+         <strong>  Circularity  </strong>  (roundness) is the condition in which every surface segment is the same distance from the center of a circle. The symbol appears in the control frame box as a circle and controls the roundness of a cylindrical piece such as a bearing, rod, or shaft. 
+
+
+        </p>
+
+
+        <p> 
+          The tolerance zone is two concentric circles the distance of the tolerance apart, and every point of each segment must be between the two circles. <strong> Figure 41 </strong>  illustrates the meaning of circularity.
+
+
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"41",
+     "shadow":"gray",
+     "folder":'3',
+    "h":"zoom-figure--h470",
+    "desc":"Circularity is the condition in which each circular element of a round surface must be within a specified zone. Here, each circular element of the surface in a plane perpendicular to an axis must lie between two concentric circles, one having a radius 0.25 larger than the other."  })
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          <strong> Cylindricity </strong>  combines circularity and surface flatness to the condition of a surface forming a cylinder. The symbol appears as a circle with short, slightly offset lines on either side and is a 3D measurement that often appears with shafts. All surface points are within two concentric cylinders—running the full length of the 
+
+
+
+
+
+        </p>
+
+
+        <p> 
+          piece—formed by the stated tolerance zones and can apply to external or internal features. <strong> Figure 42 </strong>  illustrates cylindricity. As opposed to circularity—which applies to one plane of a cylinder—cylindricity applies to all planes making up the piece.
+
+
+
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"42",
+    "folder":'3',
+     "shadow":"gray",
+    "h":"zoom-figure--h660",
+    "desc":"Like flatness, cylindricity refers to the requirement that all elements of the entire cylindrical surface must be within a specified tolerance zone. It applies to the entire surface. Here, the cylindrical surface must lie between two concentric cylinders, one having a radius .25 larger than the other."  })
+</div>
+
+
+@@include('./html-templates/scripts.html',{})

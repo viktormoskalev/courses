@@ -1,0 +1,201 @@
+@@include('./html-templates/head.html',{
+  "title":"  4.1.5. Dimensions and Tolerances  (Tolerances)"
+})
+
+
+@@include('./html-templates/header.html',{
+  "num":"4.1.5." ,
+  "title":' Dimensions and Tolerances  (Tolerances)',
+  "desc":" All dimensions have limits of variation, both high and low, that identify the largest and smallest permissible dimension or feature on a part. This difference between the high and low limits on a dimension is called the tolerance. Another way to think of the overall range of acceptable dimensions can be a tolerance band—as used in electronics. Tolerance can affect the size and location dimensions and geometric features such as flatness, parallelism, and others. As a refresher, in lesson 3.2, we defined unilateral tolerance as having +/- dimension, bilateral tolerance as having single side variations, and limit tolerance using specified high/low limits. Along with these international standards, many companies have internal standards that define how their blueprints portray features, dimensions, tolerances, notes, and symbols in conjunction with national or international standards. ",
+  "icon":"415"
+})
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"6",
+     "shadow":"gray",
+     "folder":'41',
+    "h":"zoom-figure--h470",
+    "desc":'These hole locations use bilateral tolerances allowing a variation of +/– .005 from the desired or nominal dimension. The width of the part—shown at the bottom—is a unilateral tolerance allowing only – .03 variation from 2.97 to 3.00 wide. The hole diameter uses a limit tolerance showing both the upper and lower size limits of 0.380 to 0.370.”'  })
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray ">
+        <p>
+          Along with these international standards, many companies have internal standards that define how their blueprints portray features, dimensions, tolerances, notes, and symbols in conjunction with national or international standards.
+
+        </p>
+
+     </section>
+  </div>
+</div>
+
+
+      <div class="container-fluid main-container">
+       <div class="justify-content-around  row main-row">   
+
+
+ <div class="col-sm-4">
+  @@include('./html-templates/switch-cards-title.html',{
+    "anim":"appear-rotate",
+    "img":"icon-check.png",
+    "title":"  Bilateral tolerance ",
+    "hide-icon-open":" ",
+    "desc":"  specifies the tolerance as a variation in both positive and negative directions from the desired dimension",
+  }) 
+ </div> 
+
+ <div class="col-sm-4">
+  @@include('./html-templates/switch-cards-title.html',{
+    "anim":"appear-rotate",
+    "img":"icon-check.png",
+    "title":"  Unilateral tolerance ",
+    "hide-icon-open":" ",
+    "desc":"specifies the variation in one direction from the desired dimension  specifies the variation in one direction from the desired dimension",
+  }) 
+ </div> 
+
+ <div class="col-sm-4">
+  @@include('./html-templates/switch-cards-title.html',{
+    "anim":"appear-rotate",
+    "img":"icon-check.png",
+    "title":"   Limit Tolerance ",
+    "hide-icon-open":" ",
+    "desc":"     shows the actual upper and lower limits of the dimension",
+  }) 
+ </div> 
+
+
+
+  </div>
+
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+         <strong> Figure 6  </strong>  shows the drawing for a part with holes that will extend through the part. The machinist will drill these features to fall anywhere between the two limiting dimensions. Each hole might have a slightly different size that could still keep it within the shown tolerance allowance. The engineer could have shown the same hole dimension as a bilateral tolerance—0 .375 +/–.005—giving the same nominal size.
+
+        </p>
+        <p> 
+         <strong> Figure 6  </strong>  also uses a unilateral tolerance for the part's width, allowing only a variation below the nominal width of 3.00 inches. If the machinist cuts the part from a piece of bar stock to a 3" length, it allows .03" to clean up the cut face and still be within tolerance.”
+
+
+        </p>
+     </section>
+  </div>
+</div>
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          The image in <strong> Figure 6  </strong> highlights three holes with their location referenced using a bilateral tolerance—+/- 0.005. Notice that while all three features have the same bilateral tolerance, they each have locations based on the distance from another piece's face. Each hole's diameter has the same stated tolerance—Ø 0.370 - 0.380 (3PL) THRU.
+<br><br>
+          The machinist can read the dimension from the machine's digital readout—vernier scale during production. The tolerance allows for a location variance on both sides of the drilled hole, making it easier to match readings on the machine with dimensions on the print. 
+        </p>
+        <p> 
+          It reduces errors and allows quicker manufacturing by using the entire tolerance on the dimension. 
+<br><br>
+          If the part had only one stated tolerance, a variation in the wrong direction would create a useless piece. The shown bilateral tolerance has equal positive and negative tolerances. However, both tolerances don’t need to be equal—allowing an uncentered theoretical location. For example, a dimension of 2.50 +0. 010 / –0.005 shows that the engineer wants a 2.50 dimension, but the machinist can place the feature anywhere between 2.510 and 2.495 and still be within tolerance.
+          
+
+
+        </p>
+     </section>
+  </div>
+</div>
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          When setting up a part with unilateral or bilateral tolerances that aren’t equal, the machinist should usually set up to machine the part to a dimension centered between the two limits. This setting allows the machinist the maximum use of the tolerance and allows the most variation during production while remaining within the required tolerance.
+<br><br>
+          Sometimes, a machinist will set up to machine a part to its maximum material condition (MMC). 
+        </p>
+        <p> 
+          They might do this when the part is difficult and expensive to produce. Machining to the MCC will allow the most material to remain after tooling. For example, they might drill a hole towards the lower tolerance since they can rework the piece, if necessary, to remove additional material but can't add material back onto the piece. The decision to stay on the MMC-side of tolerance comes after considering factors of cost, time, material availability, and the part's functionality.
+          
+
+
+        </p>
+     </section>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="container-fluid main-container">
+  <div class="justify-content-around  row main-row">   
+
+
+ <div class="col-sm-6">
+  @@include('./html-templates/switch-cards.html',{
+    "anim":"appear-rotate",
+    "img":"icon-open-new.png",
+    "desc":"  Some manufacturing will make multiple pieces of a designed part on a single run. During the run, normal tool wear and other irregularities will cause varying machined tolerance—creating a part that is beyond the tolerance. The machinist might set the tolerance toward one particular side of the tolerance band to begin the run to compensate. This setting will provide the machinist with the maximum run time between tool adjustments and increase productivity.",
+  }) 
+ </div> 
+  </div>
+</div>
+
+
+<div class="container-fluid main-container">
+  <div class="justify-content-around  row main-row">   
+
+
+<div class="col-sm-4">
+@@include('./html-templates/switch-cards-title.html',{
+"anim":"appear-rotate",
+"img":"icon-check.png",
+"title":" ",
+"hide-icon-open":"card-icon-hide ",
+"desc":"A machinist can produce parts using statistical process control (SPC) and its companion statistical quality control (SQC) methods. SPC controls real-time production quality and SQC measures post-production inspection. SPC and SQC use computerized statistical analysis of measurements to control the production process. These production methods allow tolerances that differ slightly from those shown on the blueprint.",
+}) 
+</div> 
+
+<div class="col-sm-4">
+@@include('./html-templates/switch-cards-title.html',{
+"anim":"appear-rotate",
+"img":"icon-check.png",
+"title":"  ",
+"hide-icon-open":"card-icon-hide ",
+"desc":"Following SPC, if inspection of parts indicates that a production dimension moves past the specified tolerance—toward one of the limits—the process is adjusted to move back toward the normal dimension. The statistical analysis shows when the average value of a dimension, and its normal variation, is changing due to normal wear within the machines and cutting tools. Even though no parts may have been inspected that fall outside of the allowed limits, it’s statistically likely that some parts  will begin to vary outside of the allowable limits in longer runs.",
+}) 
+</div> 
+
+<div class="col-sm-4">
+@@include('./html-templates/switch-cards-title.html',{
+"anim":"appear-rotate",
+"img":"icon-check.png",
+"title":"   ",
+"hide-icon-open":"card-icon-hide ",
+"desc":"   Depending on the degree of consistency that a company requires—or the probability that parts are within specification—production runs can see additional rules added to control timeframes for making tool adjustments. The blueprint notes or the part's production sheet will list setup and production rules. Specified blueprint tolerances still control when a piece is unacceptable.",
+}) 
+</div> 
+
+
+
+</div>
+
+</div>
+
+<div class="container-fluid main-container">
+  <div class="row main-row">
+    <div class="note-brick blueprint-boxsh-gray">
+      <p >The important concept behind standards is that all the people who use a print must understand it without
+        confusion about what the engineer or designer is communicating. Anything less leads to loss of production and
+        potentially costly mistakes. Unless otherwise specified, all figures used in this unit will use ANSI drawing
+        standards.</p>
+    </div>
+  </div>
+</div>
+
+
+@@include('./html-templates/scripts.html',{})  

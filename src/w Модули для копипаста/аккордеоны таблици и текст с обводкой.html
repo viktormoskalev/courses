@@ -1,0 +1,61 @@
+
+  
+  
+   <div class="container-fluid main-container">
+    <div class="justify-content-around  row main-row"> 
+  
+   @@include('./html-templates/accordeon327.html',{})  
+  </div>
+  </div>
+  
+  <!-- аккордеон не переиспользуемый, создавайте под свой отдельный html в инклудах и там все расставляйте html-templates/accordeon327.html это пример -->
+  
+  
+  <div class="container-fluid main-container">
+    <div class="justify-content-around  row main-row"> 
+  
+      @@include('./html-templates/table328.html',{})  
+  
+      <a href="https://proonlinetools.com/tools/generator-table-html/" target="blank">  создать таблицу </a>
+  </div>
+  </div>
+  <!-- 
+   таблица не переиспользуется создавайте отдельный html , таблицу удобно заполнять на сайте https://proonlinetools.com/tools/generator-table-html/
+   -->
+  
+  
+   <div class="container-fluid  main-container">
+    <div class="row  main-row">
+       <section class="col-12 text-brick blueprint-boxsh-gray">
+          <p>
+          текст сверху
+          </p>
+  
+              @@include("./html-templates/card-doted-lines.html",{
+              'title':"Maximum Material Condition",
+              'aline':'left',
+              'decor':'left',
+              'desc': '  здесь могла быть ваша реклама'} )
+  
+            @@include("./html-templates/card-doted-lines.html",{
+              'title':"Least Material Condition",
+              'aline':'right',
+              'decor':'right',
+              'desc': '   какой то текст'} )
+  
+            @@include("./html-templates/card-doted-lines.html",{
+              'title':"Regardless of Feature Size",
+              'aline':'left',
+              'decor':'left',
+              'desc': "   карточки с точечками"} )
+            @@include("./html-templates/card-doted-lines.html",{
+              'title':"Projected Tolerance Zone      ",
+              'aline':'right',
+              'decor':'none',
+              'desc': "        дескрипшн  "} )
+       </section>
+    </div>
+  </div>
+  <!-- 
+  текст с пунктиром вокруг -->
+  

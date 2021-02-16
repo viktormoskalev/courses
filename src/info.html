@@ -1,0 +1,240 @@
+@@include('./html-templates/head.html',{
+    "title":' 4.1.5. Dimensions and Tolerances  (Tolerances) '
+  })
+  
+  <!-- импорт стилей + тайтл -->
+  
+  
+  
+  <!-- в файл инклуд ловит ошибку от кавычек и переносов строки , удаляйте в тексте переносы и зменяйте одиночные кавычки на апостроф ` если вылезла ошибка -->
+  
+  
+  @@include('./html-templates/header.html',{
+    "num":"4.1.5." ,
+    "title":' Dimensions and Tolerances  (Tolerances)',
+    "desc":' All dimensions have limits of variation, both high and low, that identify the largest and smallest permissible dimension or feature on a part. This difference between the high and low limits on a dimension is called the tolerance. Another way to think of the overall range of acceptable dimensions can be a tolerance band—as used in electronics. Tolerance can affect the size and location dimensions and geometric features such as flatness, parallelism, and others. As a refresher, in lesson 3.2, we defined unilateral tolerance as having +/- dimension, bilateral tolerance as having single side variations, and limit tolerance using specified high/low limits. Along with these international standards, many companies have internal standards that define how their blueprints portray features, dimensions, tolerances, notes, and symbols in conjunction with national or international standards.   ',
+    "icon":"415"
+  })
+  
+  
+  <!-- хедер с дескрипшном если, дескрипшн не нужен просто ставим пробел вместо текста 
+    иконку закидываем в images/icons  называем icon-415 , где 415 номер страници
+  в header.scss добавляем класс для иконки  подберая значения по типу такого    
+     .icon-415 {
+      background-image: url(../images/icons/icon-415.svg);
+      background-position: 7% 50%;
+      padding-left: 100px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 280px;
+       }
+    } 
+  -->
+  
+  
+  
+  
+  <div class="container-fluid  main-container">
+    <div class="row main-row">
+       <section class="text-brick blueprint-boxsh-gray text-brick__column">
+          <p>
+  
+  текст с двумя <strong> колонками </strong>
+  
+          </p>
+          <p> 
+  
+  Если вторая колонка не нужна удаляем ее и класс text-brick__column
+  
+          </p>
+       </section>
+    </div>
+  </div>
+  
+  <!-- текст в колонках -->
+  
+  
+  
+  
+  
+  <div class="container-fluid  main-container">
+    @@include('./html-templates/figures.html',{
+      "num":"33",
+      "folder":'3',
+       "shadow":"gray",
+      "h":"zoom-figure--h660",
+      "desc":" Подпись будет справа "
+    })
+  </div>
+  <!-- 
+                                                                                  ФИГУРА ПОДПИСЬ СПРАВА
+  
+  номер - номер фигуры в тексте 
+  folder - папка в которой она лежит внутри ima
+  
+  Варианты высот zoom-figure--430  zoom-figure--470  zoom-figure--660 
+  
+  zoom-figure--720     zoom-figure--970
+  
+  добавлять новые высоты в new-figures.scss 
+  
+  картинки сохранять images/figures/4/figure33.svg
+  
+  где (4) это номер вашей линии в фигме его  же пишем в folder:
+  это нужно только в случае если счет фигур начался с 1 воизбежание замены файлов
+  -->
+  
+  
+  <div class="container-fluid  main-container">
+  @@include('./html-templates/figures-vertical.html',{
+    "num":"3",
+     "shadow":"gray",
+     "folder":'4',
+    "h":"zoom-figure--h470",
+    "desc":" подпись внизу"  })
+  </div>
+  <!-- 
+  та же фигура но подпись снизу                                                        ФИГУРА
+  
+  -->
+  
+  
+  
+  
+  
+  
+  @@include('./html-templates/popup133-universal.html',{
+    "open-icon":"images/popup133-icon-ok.svg",
+    "close-icon":"assets/img/thumbs-up.svg",
+    "color":"blue",
+    "desc":"The WEDM setup person is responsible for properly locating the part in the machine, and making sure that the profile is to size and that its location is within tolerance."})
+  
+  <!-- 
+    иконки прописывать отностиельно html
+   цвета    green , blue если оставить цвет пустым - будет фиолетовый                   попап
+  -->
+  
+     <div class="container-fluid main-container">
+          <div class="justify-content-around  row main-row"> 
+  
+            <div class="col-sm-4">
+            @@include('./html-templates/switch-cards-title-height.html',{
+            "anim":"appear-left-rotate",
+            "img":"icon-check.png",
+            "title":"  Bilateral tolerance ",
+            "hide-icon-open":" ",
+            "height":"400",
+            "desc":"   что бы изменить ширину карточки поменяйте col-sm-6 ,col-sm-4  ",
+            }) 
+            </div> 
+  
+            <div class="col-sm-4">
+            @@include('./html-templates/switch-cards-title-height.html',{
+            "anim":"appear-rotate",
+            "img":"icon-open-new.png",
+            "height":"300",
+            "title":"",
+            "hide-icon-open":" ",
+            "desc":" что бы изменить ширину карточки поменяйте col-sm-6 ,col-sm-4 ",
+            }) 
+            </div> 
+            <div class="col-sm-4">
+            @@include('./html-templates/switch-cards-title-height.html',{
+            "anim":"appear-right-rotate",
+            "img":"icon-check.png",
+            "height":"200",
+            "title":"",
+            "hide-icon-open":"card-icon-hide ",
+            "desc":" что бы изменить ширину карточки поменяйте col-sm-6 ,col-sm-4 ",
+            }) 
+            </div> 
+  
+        </div>
+    </div>
+  
+  <!-- 
+                                                                                      ФЛИП КАРТЫ
+  
+    что бы изменить ширину карточки поменяйте col-sm-6
+    карточки с анимацией, если тайтл не нужен оставьте пустым(без пробелов)  
+  
+    иконки  "img":"icon-check.png",    "img":"icon-open-new.png",  добавить новую можно прям в корень images
+  
+    анимации появления  appear-rotate  из центра 
+                         appear-left-rotate выехать слева
+                         appear-right-rotate выехать справа
+  
+   высоты   "height":"200",  300 400 500 600 , добавить новую высоту можно в card-switch.scss
+   "hide-icon-open":"card-icon-hide ",  эта строка скрывает иконку в открытой карточке
+  
+   -->
+  
+  
+  
+  
+  
+   <div class="container-fluid main-container">
+    <div class="justify-content-around  row main-row"> 
+  
+   @@include('./html-templates/accordeon327.html',{})  
+  </div>
+  </div>
+  
+  <!-- аккордеон не переиспользуемый, создавайте под свой отдельный html в инклудах и там все расставляйте html-templates/accordeon327.html это пример -->
+  
+  
+  <div class="container-fluid main-container">
+    <div class="justify-content-around  row main-row"> 
+  
+      @@include('./html-templates/table328.html',{})  
+  
+      <a href="https://proonlinetools.com/tools/generator-table-html/" target="blank">  создать таблицу </a>
+  </div>
+  </div>
+  <!-- 
+   таблица не переиспользуется создавайте отдельный html , таблицу удобно заполнять на сайте https://proonlinetools.com/tools/generator-table-html/
+   -->
+  
+  
+   <div class="container-fluid  main-container">
+    <div class="row  main-row">
+       <section class="col-12 text-brick blueprint-boxsh-gray">
+          <p>
+          текст сверху
+          </p>
+  
+              @@include("./html-templates/card-doted-lines.html",{
+              'title':"Maximum Material Condition",
+              'aline':'left',
+              'decor':'left',
+              'desc': '  здесь могла быть ваша реклама'} )
+  
+            @@include("./html-templates/card-doted-lines.html",{
+              'title':"Least Material Condition",
+              'aline':'right',
+              'decor':'right',
+              'desc': '   какой то текст'} )
+  
+            @@include("./html-templates/card-doted-lines.html",{
+              'title':"Regardless of Feature Size",
+              'aline':'left',
+              'decor':'left',
+              'desc': "   карточки с точечками"} )
+            @@include("./html-templates/card-doted-lines.html",{
+              'title':"Projected Tolerance Zone      ",
+              'aline':'right',
+              'decor':'none',
+              'desc': "        дескрипшн  "} )
+       </section>
+    </div>
+  </div>
+  <!-- 
+  текст с пунктиром вокруг -->
+  
+  
+  
+  
+    @@include('./html-templates/scripts.html',{})  
+    <!-- стандартные скрипты и закрытие боди /нтмл  если нужен еще скрипт на 1 раз  допишите его до этой вставки -->
+  
+  

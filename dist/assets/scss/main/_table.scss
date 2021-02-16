@@ -1,0 +1,108 @@
+.table {
+  margin-bottom: 50px;
+  padding: 0;
+  background-color: #fff;
+
+  table {
+    margin: 35px;
+    border-collapse: collapse;
+    border: 1px solid #c8dde6;
+    z-index: 1;
+    font-size: 0.875rem;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: $color-main;
+
+    tr {
+      &:nth-of-type(even) {
+        background-color: #daf0f8;
+      }
+
+      td {
+        padding: 15px 25px;
+        border: 1px solid #c8dde6;
+
+        // &:nth-child(1) {
+        //   min-width: 200px;
+        // }
+
+        h3 {
+          margin: 0;
+          font-family: $font-title;
+          font-size: 0.875rem;
+          font-weight: 700;
+          line-height: 1;
+          color: $color-main;
+        }
+      }
+    }
+  }
+
+  &__4column {
+    table {
+      width: calc(100% - 70px);
+    }
+  }
+
+  &__rev {
+    table {
+      width: calc(100% - 70px);
+
+      tr {
+        &:nth-of-type(1) {
+          background-color: #daf0f8;
+        }
+        &:nth-of-type(even) {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  &__lines {
+    table {
+      tr {
+        td {
+          width: 33.33%;
+
+          img {
+            margin: 10px auto;
+          }
+        }
+      }
+    }
+  }
+
+  &__head {
+    text-align: center;
+    font-family: $font-title;
+  }
+
+  &__1st-row {
+    font-family: $font-title;
+  }
+
+  &__1st-colm {
+    table {
+      tr {
+        &:nth-of-type(odd) {
+          background-color: #daf0f8;
+        }
+        &:nth-of-type(even) {
+          background-color: #fff;
+        }
+
+        td {
+          &.table__head {
+            background-color: inherit !important;
+          }
+          &:nth-child(1) {
+            max-width: 45px;
+            padding: 15px 0px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

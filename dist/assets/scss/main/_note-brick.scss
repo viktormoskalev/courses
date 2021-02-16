@@ -1,0 +1,52 @@
+.note-brick {
+  position: relative;
+  display: flex;
+  margin: 0 0 70px;
+  min-height: 90px;
+  align-items: center;
+  background-color: #fff;
+  // box-shadow: 0px 20px 40px #c8dde6;
+
+  @include tablet {
+    margin: 0 80px 70px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    background: url(../img/ok-icon.svg) center/30% no-repeat,
+      linear-gradient(135deg, #d760d8 0%, #5342b9 100%);
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 1rem;
+    line-height: 1.375em;
+    padding: 45px 30px 45px 120px;
+  }
+
+  &--question {
+    &::after {
+      background: url(../img/question-icon.svg) center/30% no-repeat,
+        linear-gradient(314.79deg, #ff7e00 25.37%, #ffc516 100%);
+    }
+  }
+
+  &--thumbs-up {
+    &::after {
+      background: url(../img/thumbs-up.svg) center/30% no-repeat,
+        linear-gradient(131.55deg, #9add31 0%, #29d88c 80.71%);
+    }
+  }
+
+  &--info {
+    &::after {
+      background: url(../img/information-outline.svg) center/30% no-repeat,
+        linear-gradient(314.79deg, #06a286 25.37%, #33dfc1 100%);
+    }
+  }
+}

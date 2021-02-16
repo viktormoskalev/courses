@@ -1,0 +1,72 @@
+@@include('./html-templates/head.html',{
+  "title":" 3.3.11.  Modifiers"
+})
+
+@@include('./html-templates/header.html',{
+  "num":"3.3.11." ,
+  "title":' Modifiers',
+  "desc":"  <b>Modifiers </b>  are supplementary symbols added to the feature control frames next to the tolerance specification. You'll see modifiers if the tolerance must be applied when the feature is at a certain size requirement. When using modifiers in the same control frame box, they appear next to the tolerance. We’ve mentioned two already, the least material condition (LMC) and the maximum material condition (MMC). The third one is regardless of feature size (RFS).   <b> Figure 50</b>  shows the GD&T symbols for these three concepts.",
+  "icon":"3311"
+})
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"50",
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"    These modifiers are applied to the geometric tolerances to alter their application or interpretation. "  })
+</div>
+
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray">
+        <p>
+          Modifiers are particularly important in specifying geometric tolerances when two parts must fit together. Such applications include when shafts must align within holes or when locating pins and alignment holes on a machine housing. These modifiers help ensure that mating parts fit as the designer intended.
+        </p>
+
+        
+          @@include("./html-templates/card-doted-lines.html",{
+            'title':"Maximum Material Condition",
+            'aline':'left',
+            'decor':'left',
+            'desc': ' The maximum material condition exists when the feature contains the maximum amount of material possible—in volume or size—with the given tolerances. For example, a shaft with a dimension of 1.000" +/– .005 is at MMC when the part`s actual dimension is 1.005". A hole is at the maximum material condition when the diameter is at the minimum allowable dimension. The control frame symbol is a capital M enclosed in a circle. MMC controls dimensional limits defining the size that the part cannot surpass. It can only apply in conjunction with straightness, parallelism, perpendicularity, angularity, and—most frequently—true position.'} )
+
+          @@include("./html-templates/card-doted-lines.html",{
+            'title':"Least Material Condition",
+            'aline':'right',
+            'decor':'right',
+            'desc': '            The least material condition exists when the feature contains the least amount of material. For example, a shaft that has a diameter of 1.000" +/– .005" will be at the least (or minimum) material condition when the shaft diameter is at 0.995". A hole is at LMC when the diameter is at the maximum allowable tolerance. The control frame symbol is a capital L enclosed in a circle. LMC controls dimensional limits and is rarer than its MMC counterpart. Engineers use it when the parts need to have a press-fit—also known as interference fit—where parts join tightly and stay in place through friction. You’ll see it combined with true position for thin-walled parts.'} )
+
+          @@include("./html-templates/card-doted-lines.html",{
+            'title':"Regardless of Feature Size",
+            'aline':'left',
+            'decor':'left',
+            'desc': "      Regardless of feature size (RFS) is a condition that means the feature must meet the tolerance specified no matter the dimensions shown for the part. It does not have a symbol, but a notation may exist near a control frame. By default, all control frame tolerances are RFS. Regardless of feature size overrides specified dimensioning and can only be overruled by MMC and LMC. "} )
+          @@include("./html-templates/card-doted-lines.html",{
+            'title':"Projected Tolerance Zone      ",
+            'aline':'right',
+            'decor':'none',
+            'desc': "             The projected tolerance zone symbol is a capital P enclosed in a circle. You will often see this control tolerance used with drilled or threaded holes for fasteners—usually paired with a dimension specification. It specifies the distance that the fastening screw or pin can extend beyond the hole. It extends the geometric tolerance through a listed height above the feature, as shown in <b> Figure 51.   </b>  "} )
+
+
+     </section>
+  </div>
+</div>
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"51",
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"  Extending the geometric tolerance by the use of a modifier ensures that mating parts will line up correctly during assembly."  })
+</div>
+
+
+
+@@include('./html-templates/scripts.html',{})

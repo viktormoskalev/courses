@@ -1,0 +1,125 @@
+.accordion-brick {
+  margin: 37.5px -7.5px 0 -90px;
+
+  @include mobile-lg {
+    margin: 37.5px -7.5px 0;
+  }
+
+  .accordion {
+    padding: 0 7.5px;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+
+    @include mobile-lg {
+      width: 50%;
+      margin: -15px 0;
+    }
+
+    .card {
+      padding: 7.5px 0;
+      flex: 0 0 100%;
+
+      &-title {
+        button {
+          padding: 7.5px 70px 7.5px 70px;
+          border: none;
+          position: relative;
+          font-size: 1.125rem;
+          text-align: center;
+          color: $color-main;
+
+          @include mobile-lg {
+            padding: 7.5px 10px 7.5px 70px;
+          }
+          @include tablet {
+            padding: 7.5px 70px 7.5px 70px;
+          }
+
+          &::after {
+            content: "" !important;
+          }
+
+          span {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+
+            &::before {
+              content: "\232A";
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translateX(-25%) translateY(-25%) rotate(90deg);
+              transition: 0.2s;
+            }
+          }
+
+          &.collapsed {
+            span {
+              &::before {
+                transition: 0.2s;
+                transform: translateY(-50%) rotate(0deg);
+              }
+            }
+          }
+        }
+      }
+
+      &-body {
+        padding: 10px;
+        margin: 1px auto;
+        width: 90%;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+        border: none;
+        background-color: #fff;
+
+        p {
+          font-size: 0.875rem;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &__lines {
+    .accordion {
+      .card {
+        &-header {
+          display: flex;
+          background-color: #fff;
+
+          .card-title {
+            width: 70%;
+
+            button {
+              padding: 7.5px 0px 7.5px 80px;
+
+              @include mobile-lg {
+              padding: 7.5px 10px 7.5px 45px;
+              }
+              @include desktop-sm {
+                padding: 7.5px 0px 7.5px 80px;
+              }
+            }
+          }
+
+          figure {
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

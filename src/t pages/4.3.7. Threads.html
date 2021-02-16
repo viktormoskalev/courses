@@ -1,0 +1,236 @@
+@@include('./html-templates/head.html',{
+  "title":"  4.3.7. Threads"
+})
+
+
+@@include('./html-templates/header.html',{
+  "num":"4.3.7." ,
+  "title":' Threads',
+  "desc":" Before we look at sample prints, let’s discuss the standard for threads and threading. This section is not an in-depth discussion on types of threads, forms, and inspection. However, the symbols and terminology found in most blueprint thread specifications will be covered to give you an understanding of what’s requested and what’s usually critical on thread callouts. ",
+  "icon":"437"
+})
+
+
+<div class="container-fluid main-container">
+  <div class="justify-content-around  row main-row">   
+
+
+<div class="col-sm-6">
+@@include('./html-templates/switch-cards.html',{
+"anim":"appear-rotate",
+"img":"icon-open-new.png",
+"desc":'  Many thread standards exist, both for inch and metric threads. These standard thread patterns include threads on fasteners such as nuts, screws, and bolts; tapered threads such as pipe threads; and power threads found on screw jacks such as Acme or Square. Most of these threads will have both inch and metric equivalents. ',
+}) 
+</div> 
+
+
+</div></div>
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="note-brick note-bric-salad-i blueprint-boxsh-gray ">
+        <p> 
+          The standard threads, found on most fasteners, include the inch standards Unified National Coarse (UNC) and Unified National Fine (UNF), and the metric standard, the ISO.
+        </p>
+
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid main-container">
+  <div class="justify-content-around  row main-row">   
+
+
+<div class="col-sm-6">
+@@include('./html-templates/switch-cards.html',{
+"anim":"appear-rotate",
+"img":"icon-check.png",
+"desc":'  The designations for inch standard threads are by the major (outside) diameter of the thread, the number of threads per inch (TPI), the thread form, class of fit, and a letter designating external or internal threading. For example, UNC designation 1⁄2-13 UNC-2A is a 1⁄2" diameter thread, 13 TPI, the Unified National Coarse series thread, class 2, and external (A). The same thread pattern tapped into a hole would be 1⁄2-13 UNC-2B—indicating an internal thread. Note that in the smaller sizes, the thread`s diameter appears as a number such as 10-32 UNF-2B or 8-32-UNC-2B. This designation refers to a #10 and a #8 tapped  hole, respectively, and doesn’t refer to 10-inch or 8-inch diameters. ',
+}) 
+</div> 
+
+
+
+<div class="col-sm-6">
+@@include('./html-templates/switch-cards.html',{
+"anim":"appear-rotate",
+"img":"icon-check.png",
+"desc":'Metric threads carry an M designation showing the thread diameter in millimeters and the thread pitch—the distance between threads. Standard metric threads include the coarse thread, M10 × 1.50—representing a 10 mm diameter thread and 1.50 mm pitch between threads—and the fine-thread, M10 × 1.25. A common inch-standard class of thread tolerances—wobble room—is H6 or g6. The metric equivalent is 2B and 2A. The entire metric thread designation would be M10 × 1.50 H6 for a tapped hole.',
+}) 
+</div> 
+
+
+</div></div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          When machining threads by any method—milling, turning, tapping, or with a die—the machinist needs to be aware of several critical dimensions. Depending on the level of information on the thread callout, the information may not be on the print. The main point to remember is that most threads conform
+        </p>
+        <p> 
+          to specific standards. If the thread callout doesn’t include all of the information, a standard-thread chart or reference handbook has the missing dimensions..
+          </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          To start, the machinist needs to provide the proper starting diameter for the thread. In applications where the thread is to be milled—or turned on a shaft—machine the thread's major diameter before attempting to machine the threads. If the threads are to be internally turned on a lathe or tapped, the proper starting hole must first be machined into the part to provide clearance for the tap or 
+        </p>
+        <p> 
+          internal threading tool. The major diameter for shafts or external threads will usually be equal to the size called out in the thread designation—.500for a 1⁄2" thread, 10 mm for an M10, and so on. Depending on the class of fit, this diameter may need to be closer to the nominal or ideal size so that the finished thread has the proper fit with the mating part.
+
+          </p>
+     </section>
+  </div>
+</div>
+
+
+<div class="container-fluid main-container">
+  <div class="row main-row">
+    <section class="panel panel-with-blue-rec boxsh-gray">
+      <figure class="panel-img">
+        <img src="images/arrow-up.svg" alt="arrow-up">
+      </figure>
+    
+      <p>If the diameter is too large, the part may interfere, and not assemble with the mating part.</p>
+    </section>
+    </div>
+</div>
+
+<div class="container-fluid main-container">
+  <div class="row main-row">
+    <section class="panel panel-with-blue-rec boxsh-gray">
+      <figure class="panel-img">
+        <img src="images/arrow-down.svg" alt="arrow-up">
+      </figure>
+    
+      <p>As the diameter is made smaller, the percentage of thread engaging with the mating part—and subsequently the strength—reduces, and the assembly may not have sufficient strength to work properly.</p>
+    </section>
+    </div>
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          When tapping a thread or turning an internal thread, it’s just as important to provide the machined thread's proper hole size. Standard charts list the proper tap drill size for a given thread and a specific percent thread engagement. If the hole is the wrong size, 
+        </p>
+        <p> 
+          the part may not fit or may fail due to low strength. With larger holes, the percentage thread engagement decreases. If the hole is too small, the mating part won’t assemble.
+          </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid main-container">
+  <div class="justify-content-around  row main-row">   
+
+
+<div class="col-sm-6">
+@@include('./html-templates/switch-cards.html',{
+"anim":"appear-rotate",
+"img":"icon-check.png",
+"desc":'  Often, thread callouts will include either the tap drill size for machining or the percent thread required on the finished thread. Chats convert the percent thread counts to the proper tap drill size. A machinist can use these charts to select the proper drill. For example, 75% thread engagement on a 1⁄4-20 UNC-2B thread calls for a .2013" diameter drill, which is about the size of a #7 drill.  ',
+}) 
+</div> 
+
+
+
+<div class="col-sm-6">
+@@include('./html-templates/switch-cards.html',{
+"anim":"appear-rotate",
+"img":"icon-check.png",
+"desc":'     For 65% thread, use a .2077" diameter or approximately a #4 drill. Although it may appear that using the smaller drill is always the best choice since the thread will be stronger, if a print calls for a specific drill or percent thread, it’s best to match that as closely as possible.',
+}) 
+</div> 
+
+
+</div></div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="note-brick note-bric-salad-i blueprint-boxsh-gray ">
+        <p> 
+          Trying to make a stronger thread requires much higher torque, and it’s more likely that the tap will break during machining. This failure can cause excessive machining time and costs and possibly result in scrapping the part.
+        </p>
+
+     </section>
+  </div>
+</div>
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          There’s a growing use of a special tapping method called a cold-forming or thread-rolling tap. This tap actually cold-works or rolls the material into place rather than cutting the material. This method of tapping makes a high-quality thread that appears burnished or polished. Since it doesn’t create chips, it’s useful in blind holes, where cleaning out the chips can be a problem. 
+        </p>
+        <p> 
+          Also, this tapping can actually make a stronger thread due to the type of forming done. The machinist's concern is that if using a cold-forming tap, they need a different chart to select the tap drill size. Since the material isn’t cut out of the hole but formed, a larger tap drill is required, and a chart—specifically set up for the cold form tap—gives the proper tap drill.</p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+
+        <strong>Figure 8 </strong>   includes several tapped holes, along with the thread callouts for the holes. It contains a great deal of information for the machinist. For example, the tap drills' given depth is the depth of the tip of the drill. The blind 1⁄4-28 tap drill appears as a .21 diameter drill × .68" deep. The thread length shows as .50" deep and is the depth of the good thread. The tip of the tap will need to run farther into the hole to provide the full depth of thread required. If the tap's tip runs in only .50" deep, it’s possible that when assembling the part, the bolt won’t be able to
+
+
+
+        </p>
+        <p> 
+          be screwed into the part far enough. This hole depth is something that the machinist will need to make sure is correct before the part is finished, and especially before it’s hardened through heat-treated. Once hardened, it’s much more difficult and expensive to correct tapped holes that are too shallow. If in doubt, run the tap drill deeper, making sure that it doesn’t break out the other side—unless there’s a note allowing this. </p>
+     </section>
+  </div>
+</div>
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"8",
+     "shadow":"gray",
+     "folder":'4',
+    "h":"zoom-figure--h470",
+    "desc":"The section view shows several tapped holes and the thread callouts to illustrate how the tap drill and tap depths relate to the actual part. The 1⁄2 NPT tap is a 1⁄2 National Pipe Tap thread—a tapered thread. The tap drill depths shown provide clearance for a standard tap. The tap depth represents the thread's depth, not the depth of the tip of the tap."  })
+</div>
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+
+         <strong>Figure 8  </strong> shows the 3⁄8-16 UNC tap as thru all. Again, this is the full thread, not just the tip of the tap. Since no actual part dimension exists, ensure that both the tap drill and tap extend completely through the part when tapping this hole. The 10-32 UNF tap has both a dimension showing the tap drill depth of .54" and a note stating that the tap drill can go all the way through the part. 
+
+
+
+        </p>
+        <p> 
+          Adding this note makes the tapping operation easier since it’s always easier to tap a through-hole since the chips can push ahead of the tap. With a blind hole, the chips may pack in the bottom of the hole. If the tap drill can’t go deep enough for the required thread depth, the machinist may need to use a bottoming tap since it has less lead and can tap closer to the bottom of the hole. </p>
+     </section>
+  </div>
+</div>
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray ">
+        <p>
+
+          The pipe taps design—a type of tapered taps—allows sealing with a mating part using an interference fit during assembly. For this reason, the tap should only as deep as the specification states. Any further depth will cause the diameter to get larger and may cause the interference fit to leak.
+
+
+        </p>
+
+     </section>
+  </div>
+</div>
+
+@@include('./html-templates/scripts.html',{})  

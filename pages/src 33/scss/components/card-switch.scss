@@ -1,0 +1,128 @@
+.card-switch {
+    transition:0.3s;
+    z-index: 1;
+    padding: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20px;
+    width: 100%;
+    min-height: 350px;
+    margin-bottom: 40px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-bottom-right-radius: 100px;
+        z-index: -1;
+    }
+
+    background: linear-gradient(306.97deg, #00c6ff 0%, #555dff 10.49%);
+
+
+    @include mobile-md {
+          min-height: 500px;
+    }
+
+
+
+    background-color: #fff;
+    box-shadow: 0px 20px 40px #E8E8E8;
+
+    &-icon {
+        img{
+            width: 100%;
+        }
+        height: 86px;
+        width: 86px;
+        background: linear-gradient(111.11deg, #00c6ff 0%, #555dff 82.9%);
+        padding: 30px;
+    }
+
+    .moved-icon {
+        position: absolute;
+        left: 35px;
+        bottom: 45px;
+        font-size: 40px;
+        animation: 3s ease 0s infinite normal none running slided;
+
+    }
+    &-description{
+        transition:inherit;
+        font-family: Proxima Nova;
+     
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+        height: 0;
+        overflow: hidden;
+        font-size: 16px;
+        opacity: 0;
+       
+    }
+
+}
+
+.card-switch-open {
+
+    justify-content: flex-start;
+
+    .moved-icon {
+        opacity: 0;
+    }
+    .card-switch-description{
+        transition:inherit;
+        
+        opacity: 1;
+        height: auto;
+        // position: static;
+    }
+    .card-switch-icon {
+    
+        height: 65px;
+        width: 65px;
+        padding: 20px;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+}
+
+.appear-rotate{
+    transition:1s;
+transform:rotate(90deg) scale(0.1);
+opacity: 0;
+}
+
+.animated.appear-rotate{
+ 
+    transform:none;
+    opacity: 1;
+}
+.appear-left-rotate{
+    transition:1s;
+transform:rotate(-31deg) scale(0.1) translateX(-500px);
+opacity: 0;
+position: relative;
+left: -600px;
+transform-origin: 50% 50% 50%;
+
+
+
+}
+
+.animated.appear-left-rotate{
+    left: 0;
+    transform:none;
+    opacity: 1;
+   
+}

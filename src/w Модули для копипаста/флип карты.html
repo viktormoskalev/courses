@@ -1,0 +1,56 @@
+
+     <div class="container-fluid main-container">
+        <div class="justify-content-around  row main-row"> 
+
+          <div class="col-sm-4">
+          @@include('./html-templates/switch-cards-title-height.html',{
+          "anim":"appear-left-rotate",
+          "img":"icon-check.png",
+          "title":"  Bilateral tolerance ",
+          "hide-icon-open":" ",
+          "height":"400",
+          "desc":"   что бы изменить ширину карточки поменяйте col-sm-6 ,col-sm-4  ",
+          }) 
+          </div> 
+
+          <div class="col-sm-4">
+          @@include('./html-templates/switch-cards-title-height.html',{
+          "anim":"appear-rotate",
+          "img":"icon-open-new.png",
+          "height":"300",
+          "title":"",
+          "hide-icon-open":" ",
+          "desc":" что бы изменить ширину карточки поменяйте col-sm-6 ,col-sm-4 ",
+          }) 
+          </div> 
+          <div class="col-sm-4">
+          @@include('./html-templates/switch-cards-title-height.html',{
+          "anim":"appear-right-rotate",
+          "img":"icon-check.png",
+          "height":"200",
+          "title":"",
+          "hide-icon-open":"card-icon-hide ",
+          "desc":" что бы изменить ширину карточки поменяйте col-sm-6 ,col-sm-4 ",
+          }) 
+          </div> 
+
+      </div>
+  </div>
+
+
+    <!-- 
+                                                                                      ФЛИП КАРТЫ
+  
+    что бы изменить ширину карточки поменяйте col-sm-6
+    карточки с анимацией, если тайтл не нужен оставьте пустым(без пробелов)  
+  
+    иконки  "img":"icon-check.png",    "img":"icon-open-new.png",  добавить новую можно прям в корень images
+  
+    анимации появления  appear-rotate  из центра 
+                         appear-left-rotate выехать слева
+                         appear-right-rotate выехать справа
+  
+   высоты   "height":"200",  300 400 500 600 , добавить новую высоту можно в card-switch.scss
+   "hide-icon-open":"card-icon-hide ",  эта строка скрывает иконку в открытой карточке
+  
+   -->

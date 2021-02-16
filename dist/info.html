@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;300;400;500;600;700&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,400&display=swap"
+      rel="stylesheet">
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="./assets/thirdpartylib/bootstrap-4.3.1/css/bootstrap.min.css">
+   <!-- Font Awesome CSS -->
+   <link rel="stylesheet" href="./assets/thirdpartylib/fontawesome-free-5.9.0-web/css/all.min.css">
+   <!-- Animate -->
+   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+   <link rel="stylesheet" href="./assets/thirdpartylib/animate-css/animate.css">
+   <!-- Template CSS -->
+   <link rel="stylesheet" href="./assets/css/styles.min.css">
+   <link rel="stylesheet" href="./assets/css/custom.css">
+   <link rel="stylesheet" href="./css/main.css">
+
+
+   <title> 4.1.5. Dimensions and Tolerances  (Tolerances) </title>
+</head>
+
+<body class="courses-42" >
+
+
+
+  
+  <!-- импорт стилей + тайтл -->
+  
+  
+  
+  <!-- в файл инклуд ловит ошибку от кавычек и переносов строки , удаляйте в тексте переносы и зменяйте одиночные кавычки на апостроф ` если вылезла ошибка -->
+  
+  
+  <div class="container-fluid main-container">
+    <div class="row main-row">
+       <header class="header">
+          <div class="header__title icon-415">
+             <div class="title-content">
+                <p>4.1.5.</p>
+                <h2 class="title-content-title"> Dimensions and Tolerances  (Tolerances)</h2>
+             </div>
+          </div>
+          <div class="header__description">
+             <p>  All dimensions have limits of variation, both high and low, that identify the largest and smallest permissible dimension or feature on a part. This difference between the high and low limits on a dimension is called the tolerance. Another way to think of the overall range of acceptable dimensions can be a tolerance band—as used in electronics. Tolerance can affect the size and location dimensions and geometric features such as flatness, parallelism, and others. As a refresher, in lesson 3.2, we defined unilateral tolerance as having +/- dimension, bilateral tolerance as having single side variations, and limit tolerance using specified high/low limits. Along with these international standards, many companies have internal standards that define how their blueprints portray features, dimensions, tolerances, notes, and symbols in conjunction with national or international standards.   
+             </p>
+          </div>
+       </header>
+    </div>
+ </div>
+  
+  
+  <!-- хедер с дескрипшном если, дескрипшн не нужен просто ставим пробел вместо текста 
+    иконку закидываем в images/icons  называем icon-415 , где 415 номер страници
+  в header.scss добавляем класс для иконки  подберая значения по типу такого    
+     .icon-415 {
+      background-image: url(../images/icons/icon-415.svg);
+      background-position: 7% 50%;
+      padding-left: 100px;
+      padding-right: 20px;
+      @include desktop-sm {
+        min-width: 280px;
+       }
+    } 
+  -->
+  
+  
+  
+  
+  <div class="container-fluid  main-container">
+    <div class="row main-row">
+       <section class="text-brick blueprint-boxsh-gray text-brick__column">
+          <p>
+  
+  текст с двумя <strong> колонками </strong>
+  
+          </p>
+          <p> 
+  
+  Если вторая колонка не нужна удаляем ее и класс text-brick__column
+  
+          </p>
+       </section>
+    </div>
+  </div>
+  
+  <!-- текст в колонках -->
+  
+  
+  
+  
+  
+  <div class="container-fluid  main-container">
+    
+
+
+
+    <div class="row main-row">   
+      <section class="blueprint width-1-1 blueprint-row  blueprint-boxsh-gray">
+<figure class="zoom-figure zoom-figure--h660">
+    <div class="zoom-figure-container">
+
+        <img class="zoom-img" src="images/figures/3/figure33.svg" alt=" Подпись будет справа ">
+    </div>
+    <figcaption >FIGURE 33</figcaption>
+  </figure>
+
+  <div class="blueprint__description">
+    <span class="img-head-description like-h5"   > FIGURE 33</span>
+    <p> Подпись будет справа 
+    </p>
+  </div>
+</section>
+
+</div>
+
+
+  </div>
+  <!-- 
+                                                                                  ФИГУРА ПОДПИСЬ СПРАВА
+  
+  номер - номер фигуры в тексте 
+  folder - папка в которой она лежит внутри ima
+  
+  Варианты высот zoom-figure--430  zoom-figure--470  zoom-figure--660 
+  
+  zoom-figure--720     zoom-figure--970
+  
+  добавлять новые высоты в new-figures.scss 
+  
+  картинки сохранять images/figures/4/figure33.svg
+  
+  где (4) это номер вашей линии в фигме его  же пишем в folder:
+  это нужно только в случае если счет фигур начался с 1 воизбежание замены файлов
+  -->
+  
+  
+  <div class="container-fluid  main-container">
+  
+
+
+
+  <div class="row main-row">   
+    <section class="blueprint width-1-1  blueprint-boxsh-gray">
+<figure class="zoom-figure zoom-figure--h470">
+  <div class="zoom-figure-container">
+
+      <img class="zoom-img" src="images/figures/4/figure3.svg" alt=" подпись внизу">
+  </div>
+  <figcaption  class="figcaption--right" >FIGURE 3</figcaption>
+</figure>
+
+<div class="blueprint__description">
+  <span class="img-head-description like-h5"   > FIGURE 3</span>
+  <p> подпись внизу
+  </p>
+</div>
+</section>
+
+</div>
+
+
+  </div>
+  <!-- 
+  та же фигура но подпись снизу                                                        ФИГУРА
+  
+  -->
+  
+  
+  
+  
+  
+  
+  <div class="popup133">
+
+    <div tabindex="0"  aria-label="Press Enter to reveal" class="animated-box popup133-button  popup133-button--blue">
+
+        <img class="popup133-open-icon" src="images/popup133-icon-ok.svg" alt="✓">
+        <img class="popup133-close-icon" src="assets/img/thumbs-up.svg" alt="✓">
+    </div>
+    <p class="popup133-text">
+    
+The WEDM setup person is responsible for properly locating the part in the machine, and making sure that the profile is to size and that its location is within tolerance.
+    
+    </p>
+    </div>
+    
+  
+  <!-- 
+    иконки прописывать отностиельно html
+   цвета    green , blue если оставить цвет пустым - будет фиолетовый                   попап
+  -->
+  
+     <div class="container-fluid main-container">
+          <div class="justify-content-around  row main-row"> 
+  
+            <div class="col-sm-4">
+                    
+      
+          <div tabindex="0" aria-label="press Enter to open" class="card-switch card-switch--height-400 appear-left-rotate">
+            <div class="   card-switch-icon">
+         <img src="images/icon-check.png" alt="click to open">
+     </div>
+
+     <div class="card-switch-description">
+       
+                  
+            <div class="card-switch-title">
+              Bilateral tolerance 
+         </div>
+        
+
+
+              что бы изменить ширину карточки поменяйте col-sm-6 ,col-sm-4  
+     </div>
+
+     <span class="far moved-icon fa-hand-point-up"></span>
+     
+   </div> 
+            </div> 
+  
+            <div class="col-sm-4">
+                    
+      
+          <div tabindex="0" aria-label="press Enter to open" class="card-switch card-switch--height-300 appear-rotate">
+            <div class="   card-switch-icon">
+         <img src="images/icon-open-new.png" alt="click to open">
+     </div>
+
+     <div class="card-switch-description">
+       
+                  
+
+
+            что бы изменить ширину карточки поменяйте col-sm-6 ,col-sm-4 
+     </div>
+
+     <span class="far moved-icon fa-hand-point-up"></span>
+     
+   </div> 
+            </div> 
+            <div class="col-sm-4">
+                    
+      
+          <div tabindex="0" aria-label="press Enter to open" class="card-switch card-switch--height-200 appear-right-rotate">
+            <div class="card-icon-hide   card-switch-icon">
+         <img src="images/icon-check.png" alt="click to open">
+     </div>
+
+     <div class="card-switch-description">
+       
+                  
+
+
+            что бы изменить ширину карточки поменяйте col-sm-6 ,col-sm-4 
+     </div>
+
+     <span class="far moved-icon fa-hand-point-up"></span>
+     
+   </div> 
+            </div> 
+  
+        </div>
+    </div>
+  
+  <!-- 
+                                                                                      ФЛИП КАРТЫ
+  
+    что бы изменить ширину карточки поменяйте col-sm-6
+    карточки с анимацией, если тайтл не нужен оставьте пустым(без пробелов)  
+  
+    иконки  "img":"icon-check.png",    "img":"icon-open-new.png",  добавить новую можно прям в корень images
+  
+    анимации появления  appear-rotate  из центра 
+                         appear-left-rotate выехать слева
+                         appear-right-rotate выехать справа
+  
+   высоты   "height":"200",  300 400 500 600 , добавить новую высоту можно в card-switch.scss
+   "hide-icon-open":"card-icon-hide ",  эта строка скрывает иконку в открытой карточке
+  
+   -->
+  
+  
+  
+  
+  
+   <div class="container-fluid main-container">
+    <div class="justify-content-around  row main-row"> 
+  
+   
+            <div class="accordion-brick">
+                <div class="accordion width-1-1">
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span> Addendum (a)
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>Is the tooth’s height above the pitch circle. When added to the dedendum, it comprises the whole depth of the tooth.                       </p>
+       </div>
+    </div>
+ </div>
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span>    Base diameter (Db)           
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>Also known as a base circle—lies at the gear tooth base and generates a mathematical notion of involute (an imaginary curved line drawn as if a string was wrapped or unwrapped around the circle).              </p>
+       </div>
+    </div>
+ </div>
+
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span>      Circular pitch (p)        
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>      Is the measurement of the pitch circle between adjacent teeth on a gear.         </p>
+       </div>
+    </div>
+ </div>
+
+  
+
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span>      Dedendum (b)      
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>   Is the depth of a tooth below the pitch circle and is deeper than the opposing gear’s tooth allowing for clearance. When added to the addendum, it comprises the whole depth of the tooth.           </p>
+       </div>
+    </div>
+ </div>
+
+  
+
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span>       Diametral pitch (P)        
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>    The relationship of the number of teeth to the pitch diameter shown as a ratio.          </p>
+       </div>
+    </div>
+ </div>
+ 
+
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span>      Face width (F)       
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>     The length of the gear’s teeth measured on an axis. Gear is a machined wheel with protruding teeth that often works ins pairs or series. The term also applies to a working meshed gear set with a larger number of teeth.           </p>
+       </div>
+    </div>
+ </div>
+
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span>        Pinion    
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>  Is a machined gear with teeth. The term also applies to the gear in a meshing set that has a lesser number of teeth.       </p>
+       </div>
+    </div>
+ </div>
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span>    Pitch circle      
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>     Also known as the pitch line—is the imaginary line midway on a gear’s teeth where an opposing tooth will mesh. It equals the distance from the center of the gear to the pitch point and provides a point for measuring a gear’s speed.       </p>
+       </div>
+    </div>
+ </div>
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span>       Pitch diameter (D)     
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>    Is the diameter of the pitch circle on a line that runs completely through the gear’s center.     </p>
+       </div>
+    </div>
+ </div>
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span>     Pitch point       
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>     Is the point of contact where an opposing pitch circle meshes during the operation of two gears.    </p>
+       </div>
+    </div>
+ </div>
+                  <div class="card">
+    <div class="card-header">
+       <span class="card-title">
+          <span></span>        Root Diameter (Dr)     
+       </span>
+    </div>
+    <div class="collapse">
+       <div class="card-body">
+          <p>    Is a circle around the gear laying at the bottom (root) of the gear’s teeth.    </p>
+       </div>
+    </div>
+ </div>
+
+  
+                </div>
+ 
+             </div>
+ 
+          </section>
+       </div>
+    </div>  
+  </div>
+  </div>
+  
+  <!-- аккордеон не переиспользуемый, создавайте под свой отдельный html в инклудах и там все расставляйте html-templates/accordeon327.html это пример -->
+  
+  
+  <div class="container-fluid main-container">
+    <div class="justify-content-around  row main-row"> 
+  
+      
+
+  <section class="table table-cutting-container table__4column blueprint blueprint-boxsh-gray">
+
+<table class="table-cutting">
+     
+
+	<tbody>
+		<tr>
+			<td  class="table-cutting-title"  colspan="3">Gear Cutting Data</td>
+		</tr>
+		<tr class="table-cutting-colum-title">
+			<td>Desired Value</td>
+			<td>Known Values</td>
+			<td>Equation</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Diametral pitch (F)</td>
+			<td class="table-cutting-mid-colum">D</td>
+			<td class="table-cutting-right-colum"><span class="faction32">   <sup class="faction-top">3.1416D</sup> 
+                                                <sub class="faction-bottom">D</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td class="table-cutting-mid-colum">D and N</td>
+			<td class="table-cutting-right-colum"><span class="faction32">   <sup class="faction-top">N</sup> 
+                                                <sub class="faction-bottom">D</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td class="table-cutting-mid-colum">OD and N</td>
+			<td class="table-cutting-right-colum"><span class="faction32">   <sup class="faction-top">N+2</sup> 
+                                                <sub class="faction-bottom">OD</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td rowspan="2">Number of teeth (N)</td>
+			<td class="table-cutting-mid-colum">D and P</td>
+			<td class="table-cutting-right-colum">D × P</td>
+		</tr>
+		<tr>
+			<td class="table-cutting-mid-colum">OD and F</td>
+			<td class="table-cutting-right-colum">(OD × F) – 2</td>
+		</tr>
+		<tr>
+			<td>Pressure angle (a)</td>
+			<td class="table-cutting-mid-colum">-</td>
+			<td class="table-cutting-right-colum">20° Standard <br>
+14.5° Former Standard</td>
+		</tr>
+		<tr>
+			<td rowspan="3">Pitch diameter (D)</td>
+			<td class="table-cutting-mid-colum">N and F</td>
+			<td class="table-cutting-right-colum"><span class="faction32">   <sup class="faction-top">N</sup> 
+                                                <sub class="faction-bottom">F</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td class="table-cutting-mid-colum">N and DO</td>
+			<td class="table-cutting-right-colum"><span class="faction32">   <sup class="faction-top">N×OD</sup> 
+                                                <sub class="faction-bottom">N+2</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td class="table-cutting-mid-colum">OD and F</td>
+			<td class="table-cutting-right-colum">OD - F</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Whole depth (ht)</td>
+			<td class="table-cutting-mid-colum">N and DO</td>
+			<td class="table-cutting-right-colum">a + b</td>
+		</tr>
+		<tr>
+			<td class="table-cutting-mid-colum">D</td>
+			<td class="table-cutting-right-colum"><span class="faction32">   <sup class="faction-top"> 2.157 </sup> 
+                                                <sub class="faction-bottom">D</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td rowspan="3">Outside diameter (OD)</td>
+			<td class="table-cutting-mid-colum">N and D</td>
+			<td class="table-cutting-right-colum"><span class="faction32">   <sup class="faction-top">N+2</sup> 
+                                                <sub class="faction-bottom">D</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td class="table-cutting-mid-colum">D and F</td>
+			<td class="table-cutting-right-colum">D+<span class="faction32">   <sup class="faction-top">2</sup> 
+                                                <sub class="faction-bottom">F</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td class="table-cutting-mid-colum">D and N</td>
+			<td class="table-cutting-right-colum"> <span class="faction32">   <sup class="faction-top">(N+2)×D</sup> 
+                                                <sub class="faction-bottom">N</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td>Addendum (a)</td>
+			<td class="table-cutting-mid-colum">D</td>
+			<td class="table-cutting-right-colum"> <span class="faction32">   <sup class="faction-top">1</sup> 
+                                                <sub class="faction-bottom">D</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td rowspan="2">Working depth (hk)</td>
+			<td class="table-cutting-mid-colum">a</td>
+			<td class="table-cutting-right-colum">2a</td>
+		</tr>
+		<tr>
+			<td class="table-cutting-mid-colum">F</td>
+			<td class="table-cutting-right-colum">  <span class="faction32">   <sup class="faction-top">2</sup> 
+                                                <sub class="faction-bottom">F</sub>                 
+                                                 </span></td>
+		</tr>
+		<tr>
+			<td>Working depth (hk)</td>
+			<td class="table-cutting-mid-colum">D</td>
+			<td class="table-cutting-right-colum">    <span class="faction32"> 
+   <sup class="faction-top">3.1416</sup> 
+      <sub class="faction-bottom">2×D</sub>                 
+                                </span></td>
+		</tr>
+		<tr>
+			<td>Chordal thickness</td>
+			<td class="table-cutting-mid-colum">N, D and a</td>
+			<td class="table-cutting-right-colum">   <span class="table-sin"> 
+                            sin (
+                                <span class="faction32"> 
+                                 <sup class="faction-top">90    <sup>o</sup>   </sup> 
+                            <sub class="faction-bottom">N</sub> 
+                        
+                        
+                                </span>   ) × D
+                        </span> </td>
+		</tr>
+		<tr>
+			<td>Chordal addendum</td>
+			<td class="table-cutting-mid-colum">N, D and a</td>
+			<td class="table-cutting-right-colum">         <span class="table-sin"> 
+                        [ 1- cos (
+                            <span class="faction32"> 
+                             <sup class="faction-top">90    <sup>o</sup>   </sup> 
+                        <sub class="faction-bottom">N</sub> 
+                    
+                    
+                            </span>   ) ×   <span class="faction32"> 
+                             <sup class="faction-top">D  </sup> 
+                        <sub class="faction-bottom">2</sub> 
+                    
+                    
+                            </span>    +a
+                    </span> 
+                </td>
+		</tr>
+		<tr>
+			<td>Dedendum (b)</td>
+			<td class="table-cutting-mid-colum">F</td>
+			<td class="table-cutting-right-colum"><span class="faction32">   <sup class="faction-top">1,157</sup> 
+                                                <sub class="faction-bottom">F</sub>                 
+                                                 </span></td>
+		</tr>
+	</tbody>
+
+    </table>
+    
+    
+    
+
+
+
+
+
+
+
+
+<div class="blueprint__description">
+	<span class="img-head-description like-h5"   >    FIGURE 25</span>
+    <p class="mb-0">A few basic dimensional requirements will determine almost all the rest of the gear geometry, as shown in this table of formulas.</p>
+  </div>
+</section>  
+  
+      <a href="https://proonlinetools.com/tools/generator-table-html/" target="blank">  создать таблицу </a>
+  </div>
+  </div>
+  <!-- 
+   таблица не переиспользуется создавайте отдельный html , таблицу удобно заполнять на сайте https://proonlinetools.com/tools/generator-table-html/
+   -->
+  
+  
+   <div class="container-fluid  main-container">
+    <div class="row  main-row">
+       <section class="col-12 text-brick blueprint-boxsh-gray">
+          <p>
+          текст сверху
+          </p>
+  
+              <div class="card-doted-lines  card-doted-lines--left ">
+    <div class="card-doted-lines-title-container">
+        <div class="card-doted-lines-decoration card-doted-lines-decoration--left "></div>
+        <p class="card-doted-lines-title">
+            Maximum Material Condition
+        </p>
+
+    </div>
+
+
+
+
+    <p>
+          здесь могла быть ваша реклама
+    </p>
+
+</div>
+  
+            <div class="card-doted-lines  card-doted-lines--right ">
+    <div class="card-doted-lines-title-container">
+        <div class="card-doted-lines-decoration card-doted-lines-decoration--right "></div>
+        <p class="card-doted-lines-title">
+            Least Material Condition
+        </p>
+
+    </div>
+
+
+
+
+    <p>
+           какой то текст
+    </p>
+
+</div>
+  
+            <div class="card-doted-lines  card-doted-lines--left ">
+    <div class="card-doted-lines-title-container">
+        <div class="card-doted-lines-decoration card-doted-lines-decoration--left "></div>
+        <p class="card-doted-lines-title">
+            Regardless of Feature Size
+        </p>
+
+    </div>
+
+
+
+
+    <p>
+           карточки с точечками
+    </p>
+
+</div>
+            <div class="card-doted-lines  card-doted-lines--right ">
+    <div class="card-doted-lines-title-container">
+        <div class="card-doted-lines-decoration card-doted-lines-decoration--none "></div>
+        <p class="card-doted-lines-title">
+            Projected Tolerance Zone      
+        </p>
+
+    </div>
+
+
+
+
+    <p>
+                дескрипшн  
+    </p>
+
+</div>
+       </section>
+    </div>
+  </div>
+  <!-- 
+  текст с пунктиром вокруг -->
+  
+  
+  
+  
+    
+   <script src="./assets/thirdpartylib/jquery/jquery-3.3.1.slim.min.js"></script>
+   <script src="./assets/thirdpartylib/popper-js/popper.min.js"></script>
+   <script src="./assets/thirdpartylib/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+
+   <script src="./assets/js/scripts.min.js"></script>
+   <script src="./assets/js/main.js"></script>
+   <script src="js/main133.js"></script>
+   <script src="js/new-figures.js"></script>
+</body>
+
+</html>  
+    <!-- стандартные скрипты и закрытие боди /нтмл  если нужен еще скрипт на 1 раз  допишите его до этой вставки -->
+  
+  

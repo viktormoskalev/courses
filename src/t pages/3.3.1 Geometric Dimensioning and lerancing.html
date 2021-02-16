@@ -1,0 +1,87 @@
+@@include('./html-templates/head.html',{
+  "title":"3.3.1.  Geometric Dimensioning and Tolerancing"
+})
+
+@@include('./html-templates/header.html',{
+  "num":"3.3.1",
+  "title":'Geometric Dimensioning  <br>  and Tolerancing',
+  "desc":" Modern manufacturing processes must produce hundreds or thousands of essentially identical parts. Regardless of the manufacturer, every part needs to work at the next assembly level. American Society of Mechanical Engineers (ASME), International Organization for Standardization (ISO), and American National Standards Institute (ANSI) standards allow worldwide development and implementation to a high degree of interchangeability and avoid confusion about part requirements. These standards specify how dimensions are applied and control specific elements of part geometry that ordinary coordinate dimensioning could not control.",
+  "icon":"331"
+})
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray ">
+        <p>
+         <strong>  Geometric dimensioning and tolerancing  </strong> (GD&T) is a symbolic system of communicating on blueprints by specifying levels of accuracy and precision necessary during production. ASME, ISO, and ANSI had standards that varied slightly until adopting the ASME Y14.5-2009—a guideline for standardizing GD&T application. Most manufacturers have also adopted ASME guidelines.
+        </p>
+ 
+     </section>
+  </div>
+</div>
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"30",
+     "shadow":"gray",
+     "folder":'3',
+    "h":"zoom-figure--h470",
+    "desc":"Geometric tolerancing is designed to specify geometric forms that allow the part to function correctly in its intended application."
+  })
+</div>
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          An example of GD&T control of dimension and form of a manufactured part will illustrate this standard's importance. In lesson 3.2, we defined unilateral tolerance—having +/- dimension—bilateral tolerance—single side variations—and limit tolerance—specified high/low limits.
+
+          Figure 30 shows an example of a cylinder dimensioned with unilateral tolerances. The part dimensioning shows as Ø1.00 +/- 0.01 in Figure 30(A) and manufactured 
+        </p>
+        <p> 
+          in Figure 30(B) at Ø 0.99, meeting the specifications and passing inspection. However, you can see that the part is curved or bent and may not be usable in the application.
+          GD&T clarifies situations like this and allows the refection of a part that falls within tolerance specifications but is flawed in other ways. Conversely, GD&T allows accepting functional parts that are seemingly outside of numerical tolerances. Here, the design would require adding tolerances to control the cylinder's bend.
+
+
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+
+@@include('./html-templates/popup133-blue-book.html',{
+  "desc":"The term form refers to the geometric form of the part: a cylinder, cube, rectangle, circle, plane, or other geometric figure to which the part is supposed to conform."
+})
+ 
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          In the next sections, we’ll discuss some fundamental GD&T concepts that’ll help you read and understand mechanical drawings' design intent. Primarily, GD&T sees use in the world of mechanical part and assembly drawings.
+        </p>
+        <p> 
+          In architectural applications, GD&T focuses on blueprints for steel beams and joists. GD&T wouldn’t apply to such drawing types as floor plans, electrical layouts, schematics, or HVAC plans.
+ 
+
+        </p>
+     </section>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  
+
+@@include('./html-templates/scripts.html',{})

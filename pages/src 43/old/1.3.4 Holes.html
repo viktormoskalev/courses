@@ -1,0 +1,59 @@
+@@include('./html-templates/head.html',{
+  "title":"1.3.4 Holes"
+})
+
+
+
+@@include('./html-templates/header.html',{
+    "num":"1.3.4",
+    "title":'Holes',
+    "desc":"Holes in parts can be through holes—drilled, bored, or tapped completely through the surface—or extend only partially into the material, called blind holes. Blind holes can have their bottom shaped like the drill point, or less commonly, made flat by drilling and then milling. The dimensioning of a blind hole's depth doesn’t include the drill point depth at the bottom. A hole without a depth dimension is assumed to be a through hole.",
+    "icon":"134"
+})
+
+<div class="container-fluid main-container-bg  main-container-bg-132 main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-blue3 text-brick__column">
+        <p>
+
+          Holes are often <b>chamfered</b>—cut away—at their entrance. The sharp edges of the holes are machined to make it easier to insert a bolt or shaft. Chamfers are usually made at 45-degree angles as shown in <b> Figure 50 </b> .
+
+        </p>
+        <p> 
+          Leader lines will point to depth specifications. Chamfers are also used on the ends of shafts and pins to aid assembly, and are dimensioned the same way
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"50",
+    "chart":"50",
+    "shadow":"blue3",
+    "desc":"Holes are common features on many drawings. If holes don't have depth dimensioning, they will be through holes. Depth dimensioning will not include drill point intrusion."
+  })
+
+
+</div>
+
+
+<div class="container-fluid main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"51",
+    "chart":"51",
+    "shadow":"gray",
+    "desc":"Notes on the plan will indicate the type of finishing required for a hole feature. Two examples shown here include the channel-shaped counterbore symbol and the V-shaped countersink symbol"
+  })
+
+
+</div>
+
+
+
+
+
+
+
+        
+        @@include('./html-templates/scripts.html',{})

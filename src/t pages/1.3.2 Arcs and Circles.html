@@ -1,0 +1,47 @@
+@@include('./html-templates/head.html',{
+  "title":"1.3.2 Arcs and Circles"
+})
+
+
+
+@@include('./html-templates/header.html',{
+    "num":"1.3.2",
+    "title":'Arcs and Circles',
+    "desc":"Several elements will combine to provide information about symmetrical features like a circle, sphere, or arc. <strong> Figure 46</strong>  shows the designation of the object’s center uses <strong> symmetry lines or center marks</strong>—two short dark lines forming a cross—centered on the object's axis. The center line extends outward slightly beyond the feature from the symmetry. A leader line ending in an arrowhead connects information related to the part of the object it touches. Notes showing the diameter will use the Ø symbol, while notes showing the radius will use the R symbol. Using the Ø shows that dimensions are not linear. The double-circle bullseye symbol (◎) means the object is concentric. The <strong> position symbol</strong>—the circle with the crosshairs—shows the allowable tolerances for the object. Not all objects will use symmetry lines to indicate the axis of the part.  <br> <br> Large arcs will always use symmetry and center marks. Arcs will also use leader lines and R to indicate the radius of the piece. On older blueprints, you may see a 5/8-inch radius on the plans. The modern convention is to use the ANSI standard and write that figure as 0.625R. Likewise, older plans might show diameter as 1.00Ø or 1.00DIA. Under ANSI standards, this is now Ø1.00. <strong> Figure 47 </strong>  shows examples of the ANSI standard in use.",
+    "icon":"132"
+})
+
+
+
+<div class="container-fluid main-container-bg  main-container-bg-132 main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"46",
+    "folder":'1',
+    "h":"zoom-figure--h470",
+    "shadow":"blue3",
+    "desc":"Dimensioning for the part shows the symmetry/center mark and leader lines pointing to elements of the part. The Ø shows the diameter of the center circle. The note also shows that the circles are concentric. A second leader line shows the outer, concentric circle has a radius of 0.625 and the specified tolerances."
+  })
+
+
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"47",
+    "folder":'1',
+    "h":"zoom-figure--h470",
+    "shadow":"gray",
+    "desc":"The hole in the center of this part uses the newer ANSI convention for diameter symbols. The fact that no depth is specified means it’s a through hole."
+  })
+
+
+</div>
+
+
+
+
+
+
+
+        
+        @@include('./html-templates/scripts.html',{})

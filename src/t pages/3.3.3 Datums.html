@@ -1,0 +1,89 @@
+@@include('./html-templates/head.html',{
+  "title":"3.3.3.   Datums"
+})
+
+@@include('./html-templates/header.html',{
+  "num":"3.3.3",
+  "title":'Datums',
+  "desc":" A <strong> datum </strong>  is a geometric feature such as a point, line, or surface assumed to be perfect and a reference for measuring other part features. A datum feature is a real part of an object, which may have variations, but for manufacturing and measurement, assume it to be perfect. <strong> Figure 31 </strong>  shows how a real part's surface can have variations while the plane that the feature rests upon is assumed to be perfectly flat. Real parts aren’t perfect. A part can be within specifications in reference to one datum but out of specifications when measured against a different datum. For this reason, it’s important to identify primary, secondary, and tertiary (or more) datums for both manufacturing and inspection.",
+  "icon":"333"
+})
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"31",
+     "shadow":"gray",
+     "folder":'3',
+    "h":"zoom-figure--h470",
+    "desc":"Datum features such as planes are assumed to be ideal for measurement purposes, but they’ll always have some deviation from perfection."
+  })
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          The <strong> primary datum plane  </strong>  is the initial starting point for all subsequent measurements on the part. It’s established by three points of contact, which can be identified by datum target symbols on a drawing. High school geometry teaches us that two points define a line, and three points define a plane. Three points can be chosen from the real part and used to define 
+        </p>
+        <p> 
+          the perfect plane for measurement purposes. Even the primary datum feature can have variations, and the tolerance assigned to this surface measured to the perfect datum plane. <strong> Figure 32 </strong>  shows a simple object with two datum planes and the symbols used to identify the datums.
+
+
+        </p>
+     </section>
+  </div>
+</div>
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"32",
+    "folder":'3',
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"Datum features are marked with letters enclosed in a box that’s attached to a triangle on the part feature or an extension line. The triangles may be either filled or open."
+  })
+</div>
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          Using a perfect datum plane perpendicular to the primary datum plane, you can establish a <strong> secondary datum plane.  </strong> <br>
+<br>
+          The third—tertiary—data plane is then perpendicular to both the primary and secondary planes. <strong>Figure 33   </strong> shows the relationship between the three datum planes, usually labeled A, B, and C in drawings. Identifying the primary, secondary, and other datums are important for both machining and inspection since the variability of features can 
+        </p>
+        <p> 
+          affect whether a part is acceptable or not.
+          If a part is machined using one surface as a datum and then inspected using another as the primary datum, it might cause the rejection of a good part or acceptance of a bad part. 
+          <strong> Figure 34</strong>—with exaggeration of features—shows how this could occur on a part without datums specified. If you read prints as part of a machining or inspection job, make sure you know how to interpret the datums and features in relation to each other.
+
+        </p>
+     </section>
+  </div>
+</div>
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"33",
+    "folder":'3',
+     "shadow":"gray",
+    "h":"zoom-figure--h970",
+    "desc":"Datum planes, perpendicular to each other, are identified as primary, secondary, and tertiary and are perpendicular to each other (90° apart). These planes are used to define the relationships of other features such as holes, surfaces, angles, and edges. During inspection the primary plane is placed against the tool first, followed by the the secondary and tertiary planes (in that order)."
+  })
+</div>
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"34",
+    "folder":'3',
+     "shadow":"gray",
+    "h":"zoom-figure--h970",
+    "desc":"The primary and subsequent datums used for machining and inspection should be the same for both operations. In this case, a functional machined part could be rejected because the machinist and the inspector selected different datums as the primary datum."
+  })
+</div>
+  
+
+@@include('./html-templates/scripts.html',{})

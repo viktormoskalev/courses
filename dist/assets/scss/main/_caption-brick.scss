@@ -1,0 +1,18 @@
+.caption-brick {
+  padding: 0 20px;
+  margin-bottom: 50px;
+
+  @include tablet {
+    padding: 0 70px;
+  }
+
+  p {
+    font-size: 1rem;
+    font-family: $font-title;
+
+    @include mobile-lg {
+      font-size: 1.125rem;
+    }
+  }
+
+}

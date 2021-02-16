@@ -1,0 +1,126 @@
+@@include('./html-templates/head.html',{
+  "title":"  4.3.6. Fit Specifications"
+})
+
+
+@@include('./html-templates/header.html',{
+  "num":"4.3.6." ,
+  "title":' Fit Specifications',
+  "desc":" <strong> Fit </strong>  refers to the amount of clearance or interference between two assembled parts. The fit specification on a print determines this amount. The fit helps to locate parts dimensions accurately. Depending on the specified fit, it can allow parts to slip, provide pressure to lock parts together, allow for ease of assembly and disassembly, or allow for the interchangeability of parts for repair. The three basic types of fits are <strong> clearance, interference,</strong>  and <strong>transition. </strong> ",
+  "icon":"436"
+})
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray  ">
+      @@include('./html-templates/noinclude/card-green-border.html',{}) 
+     </section>
+  </div>
+</div>
+
+
+<div class="container-fluid main-container">
+  <div class="justify-content-around row main-row">   
+ <div class="col-sm-5">
+  @@include('./html-templates/switch-cards.html',{
+    "img":"icon-open-new.png",
+    "anim":"appear-left-rotate",
+    "desc":"Several common methods show fit on a blueprint. Some prints will just have the upper and lower tolerances listed on the dimension to provide the proper fit. In this case, the designer has to look up the required size range based on the parts' nominal dimensions and the fit required. The machinist will machine the part using the dimension and tolerance the same way as any other part. An example of this would be a shaft diameter specified as 1.2510 +.0006/–.0000.",
+  })
+ </div>
+
+  </div>
+
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          Companies will often develop standard notations for fits to list both the feature's actual size and its standard notation. An example of this method would be—1.2510 +.0006/–.0000 (LN2—Basic Hole System).
+<br><br>
+          This example gives the standard for a Light Press Fit (LN) with the Basic Hole System—the hole includes the basic dimension of 1.2500". If using the same fit for the basic shaft system, 
+        </p>
+        <p> 
+          the dimension and tolerance is— 1.2500 
+          +.0006/–.0000 (LN2—Basic Shaft System). The dimension of the hole changes to give the proper fit and tolerance.
+          <br><br>
+          Using this method, the designer still looks up the value for the dimensions and tolerances on the print and includes the standard notation to familiarize the machinist with the proper designation.
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          Finally, the designer may simply list the nominal dimension and the fit on the print, such as—1.2500" diameter (LN2—Basic Shaft System). With this notation, the machinist would need to look up the proper allowances for the basic shaft size and apply it to the print dimension. This information appears in many sources, including The Machinist’s Handbook 
+        </p>
+        <p> 
+          and standard reference charts both printed and on the Internet. Most shops will have copies of these tables as well. The ANSI Table of Fits shows the ANSI standard fit descriptions and designation. Actual allowances and tolerances appear in the table for the LC1 fit.
+        </p>
+     </section>
+  </div>
+</div>
+
+@@include('./html-templates/tables/table4361.html',{})  
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray">
+        <p>
+          Use the ANSI Allowances for LC1 Fit Table by first selecting the range in the first two columns representing nominal hole/shaft diameter. For example, for a 750"-diameter hole or shaft, the reader would select the 5th row—between .71 and 1.19.
+        </p>
+
+     </section>
+  </div>
+</div>
+
+
+@@include('./html-templates/tables/table4362.html',{})  
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          The remaining columns specify the maximum tolerance and clearance allowed for by an LC1 fit. For instance, the maximum clearance value is .0009" (.9 × .001). Similarly, the hole diameter can vary from nominal .750 (–0) to .7505 (.750 +.5 × .001), and the shaft can vary in diameter from .750 (+0) to .7496 (.750–.4 × .001).
+        </p>
+        <p> 
+          If the hole is at its largest diameter (.7505) and the shaft is at its smallest diameter (.7496) the clearance will be .0009 (.7505–.7496). At the other extreme, if the hole is at its smallest (.750) and the shaft at its largest (.750) there will be no clearance or interference.
+        </p>
+     </section>
+  </div>
+</div>
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="note-brick note-bric-salad blueprint-boxsh-gray ">
+        <p> 
+          ISO standards designate the tolerance for a specific fit similarly. This standard uses a deviation letter and an international (IT) grade.
+        </p>
+
+     </section>
+  </div>
+</div>
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          The deviation letter defines the tolerance zone's position with respect to the basic dimension—similar to the fits discussed above. The deviation letter will be uppercase for internal dimensions such as holes and lowercase for external dimensions such as shafts. The IT grade is a number from 01 through 16 indicating the tolerance zone's magnitude, with the larger numbers having a larger tolerance zone. Examples of metric fit designations include 35 h9—indicating a shaft with a basic dimension of 35 mm, a deviation 
+        </p>
+        <p> 
+          letter of h, and an IT grade of 9. This fit specification corresponds to a free-running fit in the ANSI system (RC7). Furthermore, 22 G7 describes a 22 mm diameter hole with a deviation of G and an IT grade of 7, comparable to an ANSI sliding fit (RC2). When the print has no actual dimensions and tolerances, the machinist will need to look up the correct values in a standards chart.
+        </p>
+     </section>
+  </div>
+</div>
+
+
+@@include('./html-templates/scripts.html',{})  

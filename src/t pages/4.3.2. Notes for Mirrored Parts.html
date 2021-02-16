@@ -1,0 +1,57 @@
+@@include('./html-templates/head.html',{
+  "title":" 4.3.2.   Notes for Mirrored Parts"
+})
+
+
+@@include('./html-templates/header.html',{
+  "num":"4.3.2." ,
+  "title":'   Notes for Mirrored Parts',
+  "desc":" <strong>  Figure 1 </strong>  shows a print with both a left-hand and a right-hand part configuration—known as a mirror image. Only the left-hand configuration is shown, along with a note on how to machine the right-hand part. When prints were hand-drawn, this was common since it took extra time to make the second drawing. A note gave the machinist the information on how to machine both parts without the need for a second print. While this was a frequent practice, it was easy to make mistakes and produce the wrong part. Mistakes were easy when filling orders for replacement parts, was only one of the configurations was required. ",
+  "icon":"432"
+})
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures-vertical.html',{
+    "num":"1",
+     "shadow":"gray",
+     "folder":'4',
+    "h":"zoom-figure--h720",
+    "desc":"The drawing references both the left-hand (LH) and the right-hand (RH) parts (mirror image) in the title block, stating that the LH part appears drawn. The block also shows the RH part's tooling as being from the opposite side."  })
+</div>
+ 
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          With the arrival of CADD software, it became quick and easy to produce a second drawing of most parts showing the opposite-hand configuration. Each configuration has its drawing and part number, meaning there’s 
+        </p>
+        <p> 
+          less chance of producing the wrong part. It also avoids the chance that the machinist would misinterpret the drawing. <strong> Figure 2 </strong> shows the right-hand view of a cover plate.
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray ">
+        <p>
+          The image below is a drawing of the righthand part noted in Figure 1. Having a separate drawing for each part, rather than just a note, reduces the chances of misinterpreting the print.
+        </p>
+
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures-vertical.html',{
+    "num":"2",
+     "shadow":"gray",
+    "h":"zoom-figure--h720",
+    "desc":"This drawing is of the right-hand part referenced in Figure 1 shows the tooling specific to this side of the feature."  })
+</div>
+ 
+
+@@include('./html-templates/scripts.html',{})  

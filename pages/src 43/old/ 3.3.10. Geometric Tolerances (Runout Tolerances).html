@@ -1,0 +1,41 @@
+@@include('./html-templates/head.html',{
+  "title":" 3.3.10.   Geometric Tolerances   (Runout Tolerances)"
+})
+
+@@include('./html-templates/header.html',{
+  "num":"3.3.10." ,
+  "title":'  Geometric Tolerances   (Orientation Tolerances)',
+  "desc":" Runout—also known as circular runout is how much a single part of a feature can vary from the datum when it turns 360-degrees. The control frame symbol resembles an arrow—drawn pointing to about the one-o-clock position. Primarily, runout applies to circular features and their rotation around an axis and determines how much wobble the part can have. <br> <br>   Runout tolerances apply to features produced with an axis of rotation and include circular runout and total runout <b>(Figure 49) </b>  . When applying runout tolerances to a surface, they apply regardless of whether the parts' dimensions are on a high or low side of the dimensional tolerance limits. In other words, the diameters of both features could be within tolerance, and yet the runout could be outside of the specified geometric tolerance.",
+  "icon":"3310"
+})
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"49",
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"In measuring circular runout, each circular element of the surfaces must be within the specified runout tolerance (0.02 full indicator movement) when the part is rotated 360° around the datum axis with the indicator fixed in a position normal to the true geometric image. (B) In measuring total runout, the entire surface must be within the specified runout tolerance zone when the part is rotated, with the indicator placed at every location along the surface."  })
+</div>
+
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+        <b>Total runout measures </b>   how far an entire surface or feature varies from a referenced datum when it turns 360-degrees. The control frame symbol is two arrows joined at the bottom by a line. Total runout applies to all parts of a feature's surface as measured by the full indicator movement of a measuring device.
+
+        </p>
+
+
+        <p> 
+          It applies to a single line (location) on a circular surface perpendicular to the surface. You would use circular runout when the part's function isn’t critical with respect to its rotational speed as measured by the full indicator movement of a measuring device
+        </p>
+     </section>
+  </div>
+</div>
+
+
+@@include('./html-templates/scripts.html',{})

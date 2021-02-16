@@ -1,0 +1,152 @@
+
+<div class="interview interview1">
+    <div class="interview-modal-error">
+        <div class="interview-modal-error-box">
+            you must complete the question before submitting 
+            <button class="interview-modal-error-close"> ok</button>
+        </div>
+    </div>
+    <div class="interview-modal-continue">
+        <div class="interview-modal-continue-container">
+            <p class="interview-modal-continue-title">loading.. </p>   
+            <p class="interview-modal-continue-description"> loading..</p>   
+            <button class="interview-modal-continue-button"> Continue</button>  
+        </div>
+ 
+    </div>
+
+<div class="interview-question">
+    <span class="interview-question-number">1</span>
+        <p class="interview-question-text">
+         
+   loading..
+
+        </p>
+         <figurev class="interview-question-icon">
+             <img src="./images/education.svg" alt="icon-education">
+         </figure>
+</div>
+
+<div class="interview-ansvers-container">
+    <div class="interview-popup"></div>
+    <div class="interview-answers">
+
+   loading..
+     </div>
+     
+     
+     <!-- <figure class="interview-img">
+     <img src="../images/figures/4/figure1.svg"  alt="figure1">
+     </figure>
+      -->
+
+</div>
+
+<button class="interview-button">Submit</button>
+
+<p class="interview-info-text">select your answer and click submit</p>
+
+
+<!-- 
+//drag s drop -->
+
+<script class="drag-drop-html" type="text/html">
+    <div class="interview-drag-s-drop-container">
+
+        <div class="interview-drop-left-container">
+            <div class="interview-drop-border">
+                <p draggable="true" class="interview-drop interview-drop1"> some text</p>
+            </div>
+            <div class="interview-drop-border">
+                <div draggable="true" class="interview-drop  interview-drop2"></div>
+            </div>
+            <div class="interview-drop-border">
+                <img draggable="true" src="./images/hero431.svg" alt="test" class="interview-drop interview-drop3">
+            </div>
+        
+        
+        
+        
+        </div>
+        
+        <div class="interview-drop-right-container">
+            <div class="interview-drop-place"></div>
+            <div class="interview-drop-place"></div>
+            <div class="interview-drop-place"></div>
+        </div>
+
+    </div>
+  
+    
+    </script>
+</div>
+
+
+<!-- drag s drop -->
+
+
+
+<script>
+
+
+window.onload= function(){
+
+
+    const plaseItrerwiewTag="interview1";
+
+    const dragSDropHTML= document.querySelector("." + plaseItrerwiewTag).querySelector(".drag-drop-html").innerHTML;
+    const question = [];
+question[0]=" question 1 ";
+question[1]=" question 2 ";
+question[2]=" question 3 ";
+question[3]=" question 4 ";
+question[4]=" question 5 ";
+
+const answer =[];
+answer[0]=[];
+answer[0].push("stop");
+
+answer[0].push(dragSDropHTML );
+
+
+answer[0].push("правильный ответ");
+answer[0].push(6);
+answer[1]=[];
+answer[1].push("Неправильный ответ");
+answer[1].push("правильный ответ");
+answer[1].push("Неправильный ответ");
+answer[1].push("Неправильный ответ");
+answer[1].push(2) ;
+
+
+answer[2]=[];
+answer[2].push("Неправильный ответ");
+answer[2].push("Неправильный ответ");
+answer[2].push("правильный ответ");
+answer[2].push("Неправильный ответ");
+answer[2].push(3); //true
+answer[3]=[];
+answer[3].push("Неправильный ответ");
+answer[3].push("правильный ответ");
+answer[3].push("Неправильный ответ");
+answer[3].push("Неправильный ответ");
+answer[3].push(2); //true
+answer[4]=[];
+answer[4].push("Неправильный ответ");
+answer[4].push("lorem");
+answer[4].push("Неправильный ответ");
+answer[4].push("правильный ответ");
+answer[4].push(4); //true
+
+const infoText=[];
+infoText.push("select erte  answer and click submit");
+infoText.push("select your ergter and click submit");
+infoText.push("select erter your answerer and click submit");
+infoText.push("select your erte and click submit");
+
+
+intervievFormContainer( question ,answer, infoText ,plaseItrerwiewTag);
+
+}
+
+</script>

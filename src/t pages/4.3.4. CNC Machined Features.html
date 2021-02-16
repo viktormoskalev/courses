@@ -1,0 +1,87 @@
+@@include('./html-templates/head.html',{
+  "title":" 4.3.4.   CNC Machined Features"
+})
+
+
+@@include('./html-templates/header.html',{
+  "num":"4.3.4." ,
+  "title":'   CNC Machined Features',
+  "desc":" Many complex manufactured parts are machined, at least partially, on <strong> computer numerically controlled</strong>  (CNC) equipment. This equipment can include machining centers for milling work, turning centers for lathe-type work, lasers, electrical discharge machines (EDM), <strong> wire electrical  discharge machines </strong> (WEDM), and water jet cutters. For parts machined on this equipment, the machinist may get a print that includes only enough dimensions to select the stock or material for machining. Such abbreviated prints will have the dimensions to inspect critical part features. The dimensions and information for the actual CNC machining of the complex forms may have been supplied only to the programmer and may not appear on the print.",
+  "icon":"434"
+})
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          The blueprint for a profile insert shown in <strong>  Figure 4  </strong> is an example of a part machined by WEDM. The operations for this part include milling the block to size, drilling the WEDM start hole, heat treating, grinding, and then WEDM machining the profile. The .8636 and 1.0613 dimensions help determine whether the WEDM has machined the profile to finish size or whether the piece needs another pass. If the part is left oversize after the finishing on the WEDM, it will go back to grinding to have the block finish-ground. At that time, the machinist can use the .4367 and .5682 location dimensions and the 2.0000 × 2.0000 block size to determine which side and how much material to grind away.
+        </p>
+        <p> 
+          The machinist will prepare the stock as shown in the view with the starter hole location and dimension. The part will be milled and drilled, heat-treated, and ground to size. The WEDM operator will then burn the profile out using a CNC program to control the machine's motion. The CNC programmer and machine do the most complex work on this type of part. However, the machinist still has a critical job: to properly prepare the stock by making sure that the sides are flat, square, and to size.
+        </p>
+     </section>
+  </div>
+</div>
+
+@@include('./html-templates/popup133 violet.html',{
+  "desc":"The WEDM setup person is responsible for properly locating the part in the machine, and making sure that the profile is to size and that its location is within tolerance."})
+
+  <div class="container-fluid main-container">
+    <div class="justify-content-around row main-row">   
+   <div class="col-sm-5">
+    @@include('./html-templates/switch-cards.html',{
+      "img":"icon-check.png",
+      "anim":"appear-rotate",
+      "desc":"In some companies, the rough block will be left oversized and ground to size and location later, after completing the WEDM process. In this case, the WEDM work is still critical for size, but the location of the profile in the block can vary somewhat. The machinist will need to inspect the part after WEDM machining and decide how much material should be removed from each side to bring the rough block and the profile's location into tolerance at the same time. ",
+    })
+   </div>
+   <div class="col-sm-5">
+    @@include('./html-templates/switch-cards.html',{
+      "anim":"appear-rotate",
+      "img":"icon-check.png",
+      "desc":"If the machinist makes a mistake at this point, it’s possible to bring some dimensions into tolerance but not leave enough material on to bring the remaining dimensions into tolerance. Careful consideration and study of the critical dimensions and the actual block size and profile locations are necessary before removing any material from the partially completed part.",
+    })
+   </div>
+    </div>
+
+    <div class="container-fluid  main-container">
+      @@include('./html-templates/figures-vertical.html',{
+        "num":"4",
+         "shadow":"gray",
+         "folder":'4',
+        "h":"zoom-figure--h720",
+        "desc":"This blueprint shows a part whose profile will be machined using a CNC program on the WEDM machine. The computer numerically controlled (CNC) equipment program uses all the profile information shown in Detail A. The machinist will use the profile location dimensions and the block and hole dimensions to prepare the rough block for WEDM machining. They will then finish-grind the block after the WEDM operation."  })
+    </div>
+
+
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+         <strong> Figure 5</strong>  shows the same part as shown in <strong> Figure 4</strong>  with all of the information required to both machine and WEDM the part. This print has information on it that’s useful only by the WEDM programmer or operator. However, a machinist familiar with this type of print can determine which dimensions necessary for machining and shouldn’t be confused by the dimensions required by the WEDM operator. The machinist can use the same size and location dimensions to prepare the block for the WEDM process and finish it after the WEDM operation. A quick check of one or two size dimensions will show if the WEDM process correctly finished the part. Then grinding to the correct size and feature location can happen. The machinist should ignore the profile dimensions used by the WEDM program. Other types of parts that often include CNC program information and basic machining information include cams with mathematically defined 
+        </p>
+        <p> 
+          shapes, mold tooling such as cores and cavities, electrodes, and parts with complex surfaces.
+          <br><br>
+         <strong> Figure 5</strong>  is an example of a part with a complex surface generated by CADD software as a solid model and will be machined using CNC equipment. The tapped holes and stock may be manually machined, and the part finish machined on a CNC mill. Inspectors can use the print to check several dimensions to assure that the part is the proper size. As in the WEDM example in Figure 4, most of the complex geometry dimensions used by the CNC machine programmer don’t appear on this print shown in Figure 5.
+        </p>
+     </section>
+  </div>
+</div>
+
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures-vertical.html',{
+    "num":"5",
+    "folder":'4',
+     "shadow":"gray",
+    "h":"zoom-figure--h720",
+    "desc":"This blueprint for a mold core has only a few dimensions needed to prepare the stock, drill and tap the mounting holes, and overall dimensions to check the part after CNC milling. All the surface dimensions are either on another print—used by the programmer—or are transferred by the CADD program directly from the solid model of the part."  })
+</div>
+
+
+@@include('./html-templates/scripts.html',{})  

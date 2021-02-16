@@ -1,0 +1,93 @@
+    .faction32{
+        vertical-align: middle;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    display: inline-block;
+    text-align: center;
+      vertical-align:middle;
+    
+    }
+    .faction-top{
+        vertical-align: middle;
+        text-align: center;
+        border-bottom:solid 1px #979797;
+        display: block;
+        padding-bottom: 10px;
+    }
+    .faction-bottom{
+        text-align: center;
+        vertical-align: middle;
+        display: block;
+    }
+
+
+.table-cutting{
+          color: #223458;
+        line-height: 22px;
+        font-family: lato;
+        &-colum-title{
+            font-family: Proxima Nova;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0px;
+            text-align: left;
+      }
+      &-right-colum{
+          text-align: center;
+          min-width: 480px;
+      }
+      .table-sin{
+          font-size: 24px;
+        }
+
+      .table-cutting-mid-colum {
+            padding-left: 52px;
+            max-width: 180px;
+      }
+      td{
+          padding-top: 20px;
+          padding-bottom: 20px;
+          max-width: 205px;
+      }
+
+}
+ 
+.table__4column{
+    table{
+        width: calc(100% - 90px);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
+@media (max-width:600px){
+td{
+    font-size: 12px;
+    padding:10px 5px!important;
+  text-align: center;
+  .table-sin{
+        line-height: 40px;
+  }
+}
+}
+    
+    .table-cutting-title{
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .table-435{
+        td{
+            font-size: 14px;
+            line-height: 22px;
+            
+        }
+        
+    }

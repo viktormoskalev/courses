@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-main;
+  font-size: $font-size;
+  color: $color-main;
+}
+
+h1 {
+  color: $color-main;
+}
+
+img {
+  display: block;
+
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  &-container {
+    max-width: 1024px !important;
+    margin: 0 auto;
+
+    &--top-marg {
+      margin-top: 40px;
+    }
+
+    &-bg {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 130px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $color-bg-accent;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 100%);
+        z-index: -1;
+      }
+
+      &-long {
+        &::before {
+          height: 175%;
+        }
+      }
+
+      &--short {
+        &::before {
+          height: 80%;
+        }
+      }
+
+      &--double-long {
+        &::before {
+          top: 50%;
+          clip-path: polygon(0 5%, 100% 0, 100% 100%, 0% 90%);
+          height: 800px;
+        }
+      }
+
+      &--double-long-reverse {
+        &::before {
+          top: 50%;
+          clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+          height: 1400px;
+        }
+      }
+    }
+  }
+  &-row {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include mobile-lg {
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+  }
+}
+
+.boxsh-blue {
+  box-shadow: 0 20px 40px $color-bg-accent !important;
+}
+.boxsh-gray {
+  box-shadow: 0 20px 40px #e4e4e4 !important;
+}
+
+.next {
+  display: flex;
+
+  &-section {
+    position: relative;
+    margin: 0 auto;
+    padding: 15px 30px 15px 55px;
+    border-radius: 8px;
+    line-height: 1;
+    background-color: #0174ee;
+    color: $color-text-light;
+    transition: 0.3s;
+
+    &:hover {
+      color: $color-text-light;
+      background-color: $color-main;
+    }
+
+    &::before {
+      content: "\232A";
+      position: absolute;
+      top: 50%;
+      left: 25px;
+      transform: translateY(-50%);
+    }
+  }
+}

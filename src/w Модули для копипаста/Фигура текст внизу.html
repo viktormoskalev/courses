@@ -1,0 +1,28 @@
+
+
+  <div class="container-fluid  main-container">
+    @@include('./html-templates/figures-vertical.html',{
+      "num":"3",
+       "shadow":"gray",
+       "folder":'4',
+      "h":"zoom-figure--h470",
+      "desc":" подпись внизу"  })
+    </div>
+  <!-- 
+                                                                             
+  
+  номер - номер фигуры в тексте 
+  folder - папка в которой она лежит внутри images
+  
+  Варианты высот zoom-figure--430  zoom-figure--470  zoom-figure--660 
+  
+  zoom-figure--720     zoom-figure--970
+  
+  добавлять новые высоты в new-figures.scss 
+  
+  картинки сохранять images/figures/4/figure33.svg
+  
+  где (4) это номер вашей линии в фигме его  же пишем в folder:
+  это нужно только в случае если счет фигур начался с 1 воизбежание замены файлов
+  -->
+  

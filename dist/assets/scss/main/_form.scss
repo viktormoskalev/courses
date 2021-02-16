@@ -1,0 +1,103 @@
+.form {
+  &-label {
+    margin-bottom: 40px;
+    width: 100%;
+    form {
+      margin-bottom: 50px;
+      position: relative;
+      textarea {
+        width: 100%;
+        height: 300px;
+        padding: 20px 20px 60px;
+        border: 1px solid #e8e8e8;
+        border-radius: 8px;
+
+        &::placeholder {
+          color: $color-main;
+        }
+      }
+
+      button {
+        padding: 10px 25px;
+        position: absolute;
+        bottom: 25px;
+        right: 20px;
+        border: none;
+        border-radius: 8px;
+        line-height: 1;
+        background-color: #c8dde6;
+        color: $color-main;
+        cursor: pointer;
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+          outline: none;
+          background-color: $color-main;
+          color: $color-text-light;
+        }
+      }
+    }
+  }
+
+  &__impress {
+    width: 100%;
+    margin-bottom: 60px;
+
+    form {
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @include tablet {
+        justify-content: flex-start;
+      }
+
+      p {
+        margin-bottom: 0;
+        margin-right: 25px;
+      }
+
+      button {
+        padding: 10px 30px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        line-height: 1;
+        border-radius: 8px;
+        background-color: #fff;
+        border: 1px solid;
+        transition: 0.3s;
+
+        &:nth-of-type(1) {
+          border-color: #33dfc1;
+          color: #33dfc1;
+
+          &:hover {
+            background-color: #33dfc1;
+            color: $color-text-light;
+          }
+        }
+        &:nth-of-type(2) {
+          border-color: #13a6dd;
+          color: #13a6dd;
+
+          &:hover {
+            background-color: #13a6dd;
+            color: $color-text-light;
+          }
+        }
+        &:nth-of-type(3) {
+          border-color: #e1792c;
+          color: #e1792c;
+
+          &:hover {
+            background-color: #e1792c;
+            color: $color-text-light;
+          }
+        }
+      }
+    }
+  }
+}

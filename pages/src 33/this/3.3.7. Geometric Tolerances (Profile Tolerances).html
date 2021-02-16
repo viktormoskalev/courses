@@ -1,0 +1,37 @@
+@@include('./html-templates/head.html',{
+  "title":"3.3.7.   Geometric Tolerances   (Profile Tolerances)"
+})
+
+@@include('./html-templates/header.html',{
+  "num":"3.3.7." ,
+  "title":' Geometric Tolerances   (Profile Tolerances)',
+  "desc":" <b> Profile tolerances </b>  control the shape of arcs, radii, or other curved lines and surfaces. The two profile tolerances are the profile of a line and profile of a surface, and they’re useful for controlling features where it’s difficult to apply other geometric controls.  ",
+  "icon":"337"
+})
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+         <b> Profile of a line </b>  defines a feature line on, usually, a curved piece and gives information about the part’s radius. The control frame symbol resembles a parenthesis laid on its side—forming a curved, single rainbow—line. The profile of a line holds that all line elements of a cross-section of the piece must fall within two parallel lines—forming the perfect profile. For example, at any cross-section, the line must lie within the boundaries formed by two parallel lines, .005 apart, as shown in  <b>Figure 43(A) </b> . Using the 2D concept on a surface, you could take several cross-section measurements as you move across the entire surface.
+        </p>
+        <p> 
+        <b> Profile of a surface   </b>  broadens the concept of the profile of a line, extending it to all points of a surface as a 3D tolerance. The surface profile symbol resembles a half-circle resting on its bottom line. Here, two planes create tolerance control. Coordinate measuring machines can test the surface for accuracy. You will see profile of a surface frequently on blueprints as it is it suits many parts that can’t be controlled by other tolerances. For example, the surface profile controlled must have all elements within a tolerance zone formed by two parallel planes, .005 apart, as shown in <b>  Figure 43(B). </b> 
+
+
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"43",
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"Profile tolerances for a line or surface control the form of the feature within the specified tolerance. A line profile applies only to a line on the surface; a surface profile applies to the entire surface of the feature."  })
+</div>
+
+
+@@include('./html-templates/scripts.html',{})

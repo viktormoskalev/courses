@@ -1,0 +1,104 @@
+@@include('./html-templates/head.html',{
+  "title":"3.3.8. Geometric Tolerances   (Orientation Tolerances)"
+})
+
+@@include('./html-templates/header.html',{
+  "num":"3.3.8." ,
+  "title":'  Geometric Tolerances   (Orientation Tolerances)',
+  "desc":" <strong> Orientation tolerances</strong>  apply control to a features' placement in relation to a datum and include parallelism, perpendicularity, and angularity.  ",
+  "icon":"338"
+})
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+          Parallelism is the condition of a surface being parallel to another surface. The symbol resembles a double-slash mark, and the control can apply to either surface parallelism or axis parallelism. 
+<br>
+<br>
+         <strong> Surface parallelism  </strong>  relates two surfaces to each other and is the most common of the two parallelism controls. You can apply it to two different part surfaces or a datum shown on a drawing. When referencing a datum, the control frame will show the letter associated with the datum. Parallelism doesn’t control angle but does control the location of the feature to the stated datum. 
+        </p>
+        <p> 
+          Parallelism helps when two features of a part must work in-sync or mate. For example, surface parallelism might show all elements of a surface falling with two planes parallel to the referenced datum <strong>  (Figure 44)</strong> .
+          <br> <br>
+         <strong> Axis parallelism </strong>  controls the central axis of a part to a datum plane or axis and is useful for circular parts or features. The control frame will also reference diameter (Ø). You might see axis parallelism related to a hole or pin in relationship to another hole or pin.
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"44",
+    "folder":'3',
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"Parallelism applies to an entire surface, and can apply to circular surfaces as well as flat ones. In (A) the surface must lie between two parallel planes 0.12 apart that are parallel to the datum plane. In (B) the feature axis must lie within a 0.2 diameter cylindrical zone parallel to datum axis A."  })
+</div>
+
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray text-brick__column">
+        <p>
+
+          Perpendicularity is similar to parallelism except that the tolerance planes are perpendicular to the datum and the specified tolerance distance apart. The control frame symbol resembles an upside-down capital T. Like parallelism, perpendicularity can apply to both a surface and an axis.
+<br> <br> 
+        <strong> Surface perpendicularity </strong>   relates to two perpendicular—90-degree—surfaces or features on a part. The reference is often a plane lying at a 90° angle to a second datum plane. The tolerance will show the distance and not the angle for the feature. Surface perpendicularity can apply to any parts that require square edges or cylinders that require flat bottoms.
+          
+
+
+        </p>
+
+
+        <p> 
+        <strong> Axis perpendicularity </strong>   controls the feature in relation to a datum axis and often applies to pins or a hole. The control frame will also reference the datum’s diameter (Ø). The referenced theoretical axis is perpendicular to the datum plane, and the tolerance will state the acceptable location for the central axis of the feature. Least and maximum material conditions may apply to define the feature further. Axis perpendicularity can identify the center axis of holes drilled at a 90° angle to a part's surface.
+          
+
+        </p>
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"45",
+     "shadow":"gray",
+
+     "folder":'3',
+    "h":"zoom-figure--h470",
+    "desc":"Perpendicularity is equivalent to measuring parallelism at an exact angle of 90° and applies to the whole surface. This control frame applies only to the view where it appears and not the whole part."  })
+</div>
+
+
+
+
+<div class="container-fluid  main-container">
+  <div class="row main-row">
+     <section class="text-brick blueprint-boxsh-gray ">
+        <p>
+
+        <strong> Angularity </strong>   is again similar to parallelism and perpendicularity. The control frame symbol resembles a slightly skewed lesser-than sign. This tolerance references one feature to another—usually a surface plane or a datum plane. The control does not fix the angle of the feature, only its location—you should use angular dimensions shown to determine the feature's angle. Stamped parts with bent features use angularity and will have a dimensioned angle. <strong>  (Figure 46)</strong>.
+
+
+        </p>
+
+
+
+     </section>
+  </div>
+</div>
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"46",
+    "folder":'3',
+     "shadow":"gray",
+    "h":"zoom-figure--h470",
+    "desc":"Measuring angularity is equivalent to measuring parallelism at an angle. Here, the surface must lie between two parallel planes 0.4 apart that are inclined at 30° to datum plane A."  })
+</div>
+
+
+@@include('./html-templates/scripts.html',{})

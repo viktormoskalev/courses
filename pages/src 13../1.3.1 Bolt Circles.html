@@ -1,0 +1,77 @@
+@@include('./html-templates/head.html',{
+  "title":"1.3.1 Bolt Circles"
+})
+
+
+
+@@include('./html-templates/header.html',{
+    "num":"1.3.1",
+    "title":'Bolt Circles',
+    "desc":"",
+    "icon":"131"
+})
+
+<div class="container-fluid main-container main-container-bg  main-container-bg-parlelg">
+    <div class="row main-row">
+       <section class="text-brick blueprint-boxsh-blue3 text-brick__column">
+          <p>Many parts have circular symmetry and multiple features that occur at intervals 
+              on a specific radius. Imagine a metal round, a wheel hub, or an extruder. 
+              The drafter will use a theoretical circle called the <b> bolt circle (BC)  </b>  to draw these features, 
+              showing the diameter and angle of separation of each hole. Think of a bolted flange, such as 
+              you might find on a fire hydrant or valve body. The holes are symmetrically—equally spaced—at a radius. 
+              For example, a drawing notation might read 0.500 DIA – 3 HOLES EQL SP – 2.50 BC (also written as Ø02.5 BC). 
+          </p>
+          <p>This notation means that there are three 1/2-inch-diameter holes, 
+              equally spaced 120 degrees apart. The centers of the holes lay on 
+              an imaginary circle 2.5 inches in diameter." <b> Figure 44  </b>  shows another example with more holes. 
+              You can calculate the angular separation of equally spaced holes by dividing
+               the number of holes into the 360 degrees of a complete circle. For example, 
+               five equally spaced holes would be 360/5 degrees apart, or 72 degrees. Again, 
+               the notation EQL SP can apply to many different types of features, even those in a straight line.
+          </p>
+       </section>
+    </div>
+ </div>
+ <div class="container-fluid main-container">
+
+        @@include('./html-templates/new-figures.html',{
+          "num":"44",
+          "chart":"131",
+          "shadow":"gray",
+          "h":"zoom-figure--h430",
+          "desc":"Holes located concentrically on bolt circles are common in many types of mechanical, electrical, and architectural drawings. Holes are drawn on a thin circular centerline with individual linear centerlines marking the positioning of each hole."
+        })
+
+ </div>
+
+<div class="container-fluid main-container">
+    <div class="row main-row">
+       <section class="text-brick blueprint-boxsh-gray text-brick__column">
+          <p>
+
+            Holes can also be on a bolt circle yet be unequally spaced, as shown in <b> Figure 45. </b> 
+             With unequally spaced holes, the drafter may use one of two methods to show feature placements. 
+             They might show one hole with a centerline reference and a curved dimensioning 
+             line showing the next hole's angular distance. 
+
+          </p>
+          <p>They might also show the horizontal and vertical tolerance dimensioning 
+            between the centerline of the two features placed on the BC.
+             Holes are probably the most common feature placed and dimensioned with a bolt circle, 
+             but other features might appear as well
+          </p>
+       </section>
+    </div>
+ </div>
+ <div class="container-fluid main-container">
+ @@include('./html-templates/figures.html',{
+  "num":"45",
+  "chart":"131",
+  "shadow":"gray",
+  "h":"zoom-figure--h430",
+  "desc":"Holes located concentrically on bolt circles are common in many types of mechanical, electrical, and architectural drawings. Holes are drawn on a thin circular centerline with individual linear centerlines marking the positioning of each hole."
+})
+</div>
+
+        
+        @@include('./html-templates/scripts.html',{})

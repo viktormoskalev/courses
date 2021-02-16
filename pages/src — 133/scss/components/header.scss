@@ -1,0 +1,54 @@
+.header {
+  flex: 1 0 100%;
+    .no-icon {
+      padding: 20px 30px 30px 55px !important;
+    }
+    .header__title{
+      min-width: auto;
+      padding: 20px 70px 20px 90px;
+      display: flex;
+      align-items: center;
+      height: auto;
+      flex:0 1 auto;
+      align-self: flex-start;
+    }
+
+    &__description{
+      max-width: 425px;
+      margin-left: auto;
+    }
+    .icon-131 {
+      background: url(../images/icons/icon-131.svg);
+      background-repeat: no-repeat;
+      background-position: 10% 50%;
+    }
+    .icon-132 {
+      background: url(../images/icons/icon-132.svg);
+      background-repeat: no-repeat;
+      background-position: 10% 50%;
+    }
+    .icon-133 {
+      background: url(../images/icons/icon-133.svg);
+      background-repeat: no-repeat;
+      background-position: 5% 50%;
+    }
+    .icon-134 {
+      background: url(../images/icons/icon-134.svg);
+      background-repeat: no-repeat;
+      background-position: 10% 50%;
+    }
+    .icon-135 {
+      background: url(../images/icons/icon-135.svg);
+      background-repeat: no-repeat;
+      background-position: 10% 50%;
+      padding-left: 130px;
+      padding-right: 40px;
+    }
+    .icon-136 {
+      background: url(../images/icons/icon-136.svg);
+      background-repeat: no-repeat;
+      background-position: 17% 50%;
+      padding-left: 120px;
+      padding-right: 70px;
+    }
+}  

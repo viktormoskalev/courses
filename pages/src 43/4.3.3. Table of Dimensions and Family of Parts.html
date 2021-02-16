@@ -1,0 +1,23 @@
+@@include('./html-templates/head.html',{
+  "title":" 4.3.3.   Table of Dimensions   and Family of Parts"
+})
+
+
+@@include('./html-templates/header.html',{
+  "num":"4.3.3." ,
+  "title":'  Table of Dimensions   and Family of Parts',
+  "desc":" Components that are similar in shape and feature, and vary only in size, are often referred to as a family of parts. A good example of this would be a set of wrenches, shims, or spacers for adjusting tooling on a machine. <b> Figure 3 </b>  depicts a set of spacers that are all the same size, with the same hole locations, and vary only in thickness. Rather than having separate drawings for each piece of tooling, which would be confusing, it’s easier to show all the parts on the same drawing and include a table of dimensions for the necessary changes on related parts. The machinist can then make any of the parts required using the same drawing. To further reduce the chance of error, it’s smart to highlight or mark the line in the table that includes the part and dimension as you work on them.",
+  "icon":"433"
+})
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures-vertical.html',{
+    "num":"3",
+     "shadow":"gray",
+    "h":"zoom-figure--h720",
+    "desc":"The table shown has the variation in Dimension A for the related parts. This variation is the only difference among all the parts identified in this print. Using one print with a dimension table is common for a family of parts."  })
+</div>
+ 
+
+@@include('./html-templates/scripts.html',{})  

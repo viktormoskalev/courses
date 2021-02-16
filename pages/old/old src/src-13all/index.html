@@ -1,0 +1,44 @@
+@@include('./html-templates/head.html',{
+  "title":"1.3.Exercise"
+})
+
+
+<div class="container-fluid  main-container">
+  @@include('./html-templates/figures.html',{
+    "num":"G",
+    "chart":"gы",
+    "shadow":"gray",
+    "desc":"Use this figure to answer Questions 1 through 5."
+  })
+</div>
+
+<div class="container-fluid  main-container">
+
+  <div class="row main-row">   
+    <section class="blueprint blueprint-row blueprint-boxsh-gray">
+  <figure>
+ 
+      <img class="img-bottom-right" src="images/figures/figureG.svg" alt="blueprint">
+  
+  
+  <figcaption>FIGURE @@num</figcaption>
+  </figure>section
+  </figure>
+  
+  <div class="blueprint__description">
+  <h5>FIGURE @@num</h5>
+  <p>@@desc
+  </p>
+  </div>
+  </section>
+  
+  </div>
+</div>
+
+
+
+
+
+
+        
+        @@include('./html-templates/scripts.html',{})
